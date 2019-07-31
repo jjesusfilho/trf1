@@ -3,6 +3,12 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/trf1?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/trf1)
+[![Travis build
+status](https://travis-ci.org/jjesusfilho/trf1.svg?branch=master)](https://travis-ci.org/jjesusfilho/trf1)
 <!-- badges: end -->
 
 O objetivo deste pacote é de prover funções para baixar e organizar
@@ -24,6 +30,8 @@ função:
 
 ``` r
 baixar_cjsg_trf1(livre = "agência nacional de vigilância sanitária", data_inicial = "01/07/2019", data_final = "31/07/2019")
+
+df <- ler_cjsg_trf1()
 ```
 
 Please note that the ‘trf1’ project is released with a [Contributor Code

@@ -26,6 +26,8 @@ Baixa decisões de segunda instância do TRF1
 }
 \examples{
 \dontrun{
-baixar_cjsg_trf1(livre="",tipo="ACORDAO",data_inicial="10/07/2019",data_final="31/07/2019")
+baixar_cjsg_trf1(livre = "", tipo = "ACORDAO",
+    data_inicial = "10/07/2019", data_final = "31/07/2019")
 }
+
 }

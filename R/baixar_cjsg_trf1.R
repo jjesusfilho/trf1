@@ -11,29 +11,23 @@
 #'
 #' @examples
 #' \dontrun{
-#' baixar_cjsg_trf1(livre="",tipo="ACORDAO",data_inicial="10/07/2019",data_final="31/07/2019")
+#' baixar_cjsg_trf1(livre = "", tipo = "ACORDAO",
+#'     data_inicial = "10/07/2019", data_final = "31/07/2019")
 #' }
-
-
-baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO",data_inicial="",data_final="",diretorio="."){
-
-
-
+#'
+baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO", data_inicial = "", data_final = "", diretorio = ".") {
   url1 <- "https://www2.cjf.jus.br/jurisprudencia/trf1/"
 
-  ViewState <- httr::RETRY("GET",url1,httr::timeout(30)) %>%
-
+  ViewState <- httr::RETRY("GET", url1, httr::timeout(30)) %>%
     httr::content() %>%
-
     xml2::xml_find_first("//form/input[@type='hidden'][2]") %>%
-
     xml2::xml_attr("value")
 
   url2 <- "https://www2.cjf.jus.br/jurisprudencia/trf1/index.xhtml"
 
-  inicial="0"
+  inicial <- "0"
 
-  body1<-list(
+  body1 <- list(
     formulario = "formulario",
     `formulario:textoLivre` = livre,
     `formulario:ckbAvancada_input` = "on",
@@ -57,9 +51,9 @@ baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO",data_inicial="",data_f
     javax.faces.ViewState = ViewState
   )
 
-  body2<-list(
+  body2 <- list(
     `javax.faces.partial.ajax` = TRUE,
-    `javax.faces.source`= "formulario:tabelaDocumentos",
+    `javax.faces.source` = "formulario:tabelaDocumentos",
     `javax.faces.partial.execute` = "formulario:tabelaDocumentos",
     `javax.faces.partial.render` = "formulario:tabelaDocumentos",
     `formulario:tabelaDocumentos` = "formulario:tabelaDocumentos",
@@ -67,8 +61,8 @@ baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO",data_inicial="",data_f
     `formulario` = "formulario",
     `formulario:textoLivre` = livre,
     `formulario:ckbAvancada_input` = "on",
-    `formulario:tabelaDocumentos_first`= inicial,
-    `formulario:tabelaDocumentos_rows`= "50",
+    `formulario:tabelaDocumentos_first` = inicial,
+    `formulario:tabelaDocumentos_rows` = "50",
     `formulario:j_idt19` = "",
     `formulario:j_idt21` = "",
     `formulario:j_idt23` = "",
@@ -125,27 +119,26 @@ baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO",data_inicial="",data_f
   numero <- NA_real_
 
   while (is.na(numero)) {
-
-    numero <- httr::RETRY("POST",url2, body = body1, encode = "form",httr::timeout(30)) %>%
+    numero <- httr::RETRY("POST", url2, body = body1, encode = "form", httr::timeout(30)) %>%
       httr::content() %>%
       xml2::xml_find_first("//span[@class='ui-paginator-current']") %>%
-      xml2::xml_text(trim=T) %>%
+      xml2::xml_text(trim = T) %>%
       stringr::str_extract("\\d+(?=,)") %>%
       as.numeric()
   }
 
-  inicial <- seq(0,numero,50)
+  inicial <- seq(0, numero, 50)
 
-  purrr::walk(inicial,~{
-    body2$`formulario:tabelaDocumentos_first` = as.character(.x)
+  purrr::walk(inicial, ~ {
+    body2$`formulario:tabelaDocumentos_first` <- as.character(.x)
 
-    arquivo=paste0("_pagina_",.x,".html")
+    arquivo <- paste0("_pagina_", .x, ".html")
 
-    httr::RETRY("POST",url2,body=body2,encode="form",httr::timeout(30),
-                httr::write_disk(file.path(diretorio,Sys.time() %>%
-                                             stringr::str_replace_all("\\D+","_") %>%
-                                             stringr::str_replace("$",arquivo))))
-
-
+    httr::RETRY("POST", url2,
+      body = body2, encode = "form", httr::timeout(30),
+      httr::write_disk(file.path(diretorio, Sys.time() %>%
+        stringr::str_replace_all("\\D+", "_") %>%
+        stringr::str_replace("$", arquivo)))
+    )
   })
 }

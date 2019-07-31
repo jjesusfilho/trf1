@@ -16,15 +16,25 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of trf1 is to ...
+O objetivo deste pacote é de prover funções para baixar e organizar decisões de primeira e de segunda instância do Tribunal Regional Federal da Primeira Região
 
-## Installation
+## Instalação
 
-You can install the released version of trf1 from [CRAN](https://CRAN.R-project.org) with:
+Instale a versão em desenvolvimento:
 
 ``` r
-install.packages("trf1")
+devtools::install_.packages_github("jjesusfilho/trf1")
 ```
+
+## Utilização
+
+Para baixar acórdãos do TRF1, use a seguinte função:
+
+
+```r
+baixar_cjsg_trf1(livre = "agência nacional de vigilância sanitária", data_inicial = "01/07/2019", data_final = "31/07/2019")
+```
+
 
 
 Please note that the 'trf1' project is released with a

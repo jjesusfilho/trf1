@@ -1,5 +1,5 @@
 Package: trf1
-Title: What the Package Does (One Line, Title Case)
+Title: Baixa e Organiza Dados do TRF1
 Version: 0.0.0.9001
 Authors@R: 
     person(given = "Jose",
@@ -28,3 +28,5 @@ Imports:
     httr (>= 1.4.0),
     xml2 (>= 1.2.0)
 RoxygenNote: 6.1.1
+URL: https://github.com/jjesusfilho/trf1
+BugReports: https://github.com/jjesusfilho/trf1/issues

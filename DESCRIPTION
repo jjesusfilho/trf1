@@ -19,12 +19,12 @@ Suggests:
 Imports: 
     rlang (>= 0.1.2),
     magrittr (>= 1.5),
-    stringr,
-    purrr,
-    dplyr,
-    tidyr,
-    lubridate,
-    janitor,
-    httr,
-    xml2
+    stringr (>= 1.4.0),
+    purrr (>= 0.3.2),
+    dplyr (>= 0.8.3),
+    tidyr (>= 0.8.3),
+    lubridate (>= 1.7.4),
+    janitor (>= 1.2.0),
+    httr (>= 1.4.0),
+    xml2 (>= 1.2.0)
 RoxygenNote: 6.1.1

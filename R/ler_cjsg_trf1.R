@@ -9,20 +9,17 @@
 #' \dontrun{
 #' ler_cjsg_trf1(diretorio = ".")
 #' }
-ler_cjsg_trf1 <- function(diretorio = "."){
+ler_cjsg_trf1 <- function(diretorio = ".") {
+  arquivos <- list.files(path = diretorio, pattern = ".html", full.names = TRUE)
 
-
-  arquivos <- list.files(path =  diretorio, pattern = ".html", full.names = TRUE)
-
-  purrr::map_dfr(arquivos, ~{
-
-    variavel<-xml2::read_html(s[1]) %>%
+  purrr::map_dfr(arquivos, ~ {
+    variavel <- xml2::read_html(s[1]) %>%
       xml2::xml_find_all("//span[@class='label_pontilhada']") %>%
-      xml2::xml_text(trim=T)
+      xml2::xml_text(trim = T)
 
     valor <- xml2::read_html(s[1]) %>%
       xml2::xml_find_all("//span[@class='label_pontilhada']/ancestor::tr[1]/following-sibling::tr/td") %>%
-      xml2::xml_text(trim=T)
+      xml2::xml_text(trim = T)
 
     tibble::tibble(variavel = variavel, valor = valor) %>%
       dplyr::group_by_at(dplyr::vars(-valor)) %>%
@@ -30,7 +27,5 @@ ler_cjsg_trf1 <- function(diretorio = "."){
       dplyr::ungroup() %>%
       tidyr::spread(key = variavel, value = valor) %>%
       dplyr::select(-row_id)
-
   })
-
 }

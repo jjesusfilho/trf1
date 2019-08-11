@@ -1,6 +1,7 @@
 #' Baixa decisões de segunda instância do TRF1
 #'
 #' @param livre busca livre
+#' @param aspas TRUE para colocar a busca entre aspas
 #' @param tipo Default para "ACÓRDÃOS"
 #' @param data_inicial formato "dd/mm/aaaa"
 #' @param data_final formato "dd/mm/aaaa"
@@ -17,8 +18,17 @@
 #' )
 #' }
 #'
-baixar_cjsg_trf1 <- function(livre = "", tipo = "ACORDAO", data_inicial = "", data_final = "", diretorio = ".") {
+baixar_cjsg_trf1 <- function(livre = "", aspas = FALSE, tipo = "ACORDAO", data_inicial = "", data_final = "", diretorio = ".") {
+
+  if (aspas == TRUE){
+
+    aspas <- deparse(aspas)
+  }
+
   url1 <- "https://www2.cjf.jus.br/jurisprudencia/trf1/"
+
+
+
 
   ViewState <- httr::RETRY("GET", url1, httr::timeout(30)) %>%
     httr::content() %>%

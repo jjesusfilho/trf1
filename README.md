@@ -3,8 +3,6 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/trf1?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/trf1)
 [![Travis build

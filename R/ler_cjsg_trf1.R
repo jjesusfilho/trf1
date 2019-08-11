@@ -13,11 +13,14 @@ ler_cjsg_trf1 <- function(diretorio = ".") {
   arquivos <- list.files(path = diretorio, pattern = ".html", full.names = TRUE)
 
   purrr::map_dfr(arquivos, ~ {
-    variavel <- xml2::read_html(s[1]) %>%
+
+    doc <- xml2::read_html(.x)
+
+    variavel <- doc %>%
       xml2::xml_find_all("//span[@class='label_pontilhada']") %>%
       xml2::xml_text(trim = T)
 
-    valor <- xml2::read_html(s[1]) %>%
+    valor <- doc %>%
       xml2::xml_find_all("//span[@class='label_pontilhada']/ancestor::tr[1]/following-sibling::tr/td") %>%
       xml2::xml_text(trim = T)
 

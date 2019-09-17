@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" type="image/png" href="/favicon.ico">
+<!-- Framework CSS -->
+<link rel="stylesheet" href="/consultaProcessual/css/blueprint/screen.css" type="text/css"
+	media="screen">
+<link rel="stylesheet" href="/consultaProcessual/css/blueprint/print.css" type="text/css" media="print">
+<!--[if IE]><link rel="stylesheet" href="/consultaProcessual/css/blueprint-0.8/ie.css" type="text/css" media="screen"><![endif]-->
+
+<link rel="stylesheet" type="text/css" media="screen" href="/consultaProcessual/css/template_css.css?2" />
+<link rel="stylesheet" type="text/css" media="screen" title="altoContraste"
+	href="/consultaProcessual/css/template_altoContraste.css?2" disabled="disabled" />
+<link rel="stylesheet" type="text/css" media="screen" title="monocromatica"
+	href="/consultaProcessual/css/template_monocromatica.css?2" disabled="disabled" />
+<link rel="stylesheet" href="/consultaProcessual/css/index.css?2" type="text/css" media="screen" />
+<script type="text/javascript">
+	var baseUrl = '/consultaProcessual';
+</script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-1.6.1.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/consultaProcessual/js/jquery-ui-1.8.13/css/redmond/jquery-ui-1.8.13.custom.css" />
+<script type="text/javascript" src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.crypt.js"></script>
+<script type="text/javascript" src='/consultaProcessual/js/Cookie.js'></script>
+<script type="text/javascript" src='/consultaProcessual/js/jquery.fontResize.js'></script>
+<script type="text/javascript" src='/consultaProcessual/js/index.js'></script>
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+<script type="text/javascript">
+    var appCache = window.applicationCache;
+
+    if (appCache != null) {
+        appCache.update(); // Attempt to update the user's cache.
+    }
+
+    if (appCache.status == window.applicationCache.UPDATEREADY) {
+        appCache.swapCache();  // The fetch was successful, swap in the new cache.
+    }
+</script>
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-27512799-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+<!-- IMplementacao reCaptchaV3 
+<script type='text/javascript' src='/consultaProcessual/js/ReCaptchaV3.js'></script>
+<script>
+    $(document).ready(function() {
+        ReCaptchaV3.init();
+    });
+</script> -->
+<!-- IMplementacao reCaptchaV3 -->
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/redmond/jquery-ui.css" />-->
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/consultaProcessual/js/jquery-ui-1.8.13/css/redmond/jquery-ui-1.8.13.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/consultaProcessual/css/tipTip.css" />
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>-->
+<script type="text/javascript"
+	src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.dialogr.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.watermarkinput.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/processo.js?1568695772"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.tipTip.minified.js"></script>
+<style type="text/css">
+tbody th {
+	text-align: right;
+}
+
+.ui-widget-content a {
+	color: #2E6E9E;
+	text-decoration: none;
+	outline: 0;
+}
+
+label {
+	margin: 0.5em 0;
+	display: block;
+}
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="/consultaProcessual/css/print.css" />
+
+</head>
+<body>
+	<div id="container" class="container">
+		<div id="header">
+                <div id="topo">
+	<h1>
+		<a href="#" title="Tribunal Regional Federal da Primeira Regi&atilde;o">Tribunal Regional Federal da Primeira
+			Regi&atilde;o</a>
+	</h1>
+	<div id="topo-center">
+		<p id="trf1">Tribunal Regional Federal da Primeira Regi&atilde;o</p>
+		<p id="trf1-telefone">
+		(71) 3617-2600        </p>
+	</div>
+</div>            </div>
+		<div id="tools" class="span-24 clear">
+			<div id="bread" class="span-20 first">
+                    <ul>
+	<li class="bread-first"><a href="#">In&iacute;cio</a></li>
+				<li><a href="/consultaProcessual/index.php?secao=BA">Consulta Processual / BA</a></li>
+					<li><a href="/consultaProcessual/numeroProcesso.php?secao=BA">Por n&uacute;mero do processo</a></li>
+						<li><span>0001100-86.2018.4.01.3300</span></li>
+		</ul>                </div>
+			<div id="imprimir" class="span-1">
+				<a href="#" rel="#container_print" title="Imprimir"><span>Imprimir</span></a>
+			</div>
+			<div id="acessibilidade" class="span-3 last"></div>
+		</div>
+		<div id="container_print" class="span-24 clear esconderImpressao hide">
+			<div class="span-3 first esconderImpressao">
+				<label><input type="checkbox" name="prnProcesso" value="#aba-processo" rel="" checked="checked" /> Processo</label>
+
+			</div>
+			<div class="span-4 esconderImpressao">
+				<label><input type="checkbox" name="prnMovimentacao" value="#aba-movimentacao" rel="#qtdMov" checked="checked" />
+					Movimenta&ccedil;&otilde;es</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-movimentacao" name="qtdMov" id="qtdMov" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnPartes" value="#aba-partes" rel="#qtdParte" checked="checked" /> Partes</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-partes" name="qtdParte" id="qtdParte" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnDocumentos" value="#aba-documentos" rel="#qtdDoc" checked="checked" />
+					Documentos</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-documentos" name="qtdDoc" id="qtdDoc" maxlength="3" size="10" />
+				</p>
+			</div>
+
+                                <div class="span-4 esconderImpressao">
+				<label><input type="checkbox" name="prnPublicacoes" value="#aba-publicacao" rel="#qtdPub" checked="checked" />
+					Publica&ccedil;&otilde;es</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-publicacao" name="qtdPub" id="qtdPub" maxlength="3" size="10" />
+				</p>
+			</div>
+                
+                <div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnAcessos" value="#ui-tabs-1" rel="#qtdAce" checked="checked" /> Acessos</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#ui-tabs-1" name="qtdAce" id="qtdAce" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 last esconderImpressao">
+				<button class="btn-print">Imprimir</button>
+			</div>
+		</div>
+		<div class="span-24 first last">
+			<div id="left_side" class="span-5">
+                    <div id="menu-tools" class="span-5 first last">
+
+	<div class="span-5 first last">
+
+		<a id="menu1-close" class="ui-widget" target="_blank"
+			href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7">Relatório de Indisponibilidade</a>
+
+	</div>
+
+	<!--div class="span-2 last">
+        
+		<a id="menu-open" href="#">Abrir todos</a>
+        
+	</div-->
+</div>
+<div class="span-5 first last append-bottom menu menu-verde">
+	<h3>
+		<a href="#acessoRapido">Op&ccedil;&otilde;es de pesquisa</a>
+	</h3>
+    	<ul class="filetree">
+
+		<li><a title="N&uacute;mero do Processo"
+			href="/consultaProcessual/numeroProcesso.php?secao=BA">N&uacute;mero do
+				Processo</a></li>
+		<li><a title="Nome da Parte"
+			href="/consultaProcessual/nomeParte.php?secao=BA">Nome da Parte</a></li>
+		<li><a title="CPF/CNPJ da parte"
+			href="/consultaProcessual/cpfCnpjParte.php?secao=BA">CPF/CNPJ da parte</a></li>
+		<li><a title="Nome do Advogado"
+			href="/consultaProcessual/nomeAdvogado.php?secao=BA">Nome do Advogado</a></li>
+		<li><a title="C&oacute;digo OAB do Advogado"
+			href="/consultaProcessual/oabAdvogado.php?secao=BA">C&oacute;digo OAB do
+				Advogado</a></li>
+		<li><a title="Mandados Judiciais"
+			href="/consultaProcessual/mandadoJudicial.php?secao=BA">Mandados Judiciais</a></li>
+		<!--<li><a title="N&uacute;mero do Processo Original (JEF)" href="#">N&uacute;mero do Processo Original (JEF)</a></li>-->
+		<li><a title="Protocolo da Peti&ccedil;&atilde;o"
+			href="/consultaProcessual/protocoloPeticao.php?secao=BA">Protocolo da
+				Peti&ccedil;&atilde;o</a></li>
+		<li><a title="Protocolo SEDEX"
+			href="/consultaProcessual/protocoloSedex.php?secao=BA">Protocolo SEDEX</a></li>
+
+	</ul>
+    </div>                </div>
+			<div id="content" class="span-19 last">
+				<div id="content-center" class="span-19 last">
+                        
+						<!--div id="fazer_login1" class="span-8 last" style="display: block;">
+							<a class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" target="_blank" href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7"><span class="ui-button-text">Relatório de Indisponibilidade</span></a>
+						</div-->
+					<div class="span-10 last" id="tools-usuario" style="float: right;">
+													<div class="span-7 last" id="tools-usuario" style="float: right; text-align: right;">
+														<div id="fazer_login" class="span-7 last" style="display: block;">
+									<a href="#">Login</a>
+								</div>
+
+								<div id="user-name" class="span-7 last" style="float:left; display: none;">
+
+									<strong id="cpf-usuario">
+                                                                        </strong> / <span id="perfil-usuario">
+                                                                        </span> <span id="cnj-usuario">
+                                                                        </span> / <a id="link_sair" rel="link_sair"
+										href="/consultaProcessual/arquivo/login/sairLogin.php">Sair</a>
+								</div>
+								                            </div>
+						</div>
+					</div>
+					<div class="span-19 last clear">
+						<div id="acessibilidade"></div>
+					</div>
+					<!-- <div class="notice span-12 last clear">Sistemas em manutenção</div> -->
+					<div class="span-19 last clear noticia-letra">
+                                                    <div id="tabs">
+							<ul>
+                                                                            <li><a href="#aba-processo">Processo</a></li>
+								<li><a href="#aba-movimentacao">Movimenta&ccedil;&atilde;o</a></li>
+								<li><a href="#aba-partes"
+									onclick="checkPartes('/consultaProcessual','00011008620184013300','BA','processual');">Partes</a></li>
+								<!--li><a href="#aba-partes">Partes</a></li-->
+								<li><a href="#aba-documentos"
+									onclick="checkDocumentos('/consultaProcessual','00011008620184013300','BA','processual');">Documentos</a></li>
+								<li><a href="#aba-publicacao">Publica&ccedil;&otilde;es</a></li>
+								<li><a href="#aba-inteiro-teor">Inteiro Teor</a></li>
+								<li><a
+									href="/consultaProcessual/arquivo/acessos.php?proc=00011008620184013300">Acessos</a></li>
+                                                                    </ul>
+                                <div id="aba-processo"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<table>
+
+	<colgroup>
+		<col class="span-3" />
+		<col class="span-10" />
+	</colgroup>
+	<tbody>
+		<tr>
+
+			<th>Processo:</th>
+
+
+			<td>0001100-86.2018.4.01.3300</td>
+		</tr>
+        <tr>
+			<th>Classe:</th>
+			<td>	1116 - Execução Fiscal<br />		</td>
+		</tr>
+		<tr>
+			<th>Vara:</th>
+			<td>19ª VARA SALVADOR</td>
+		</tr>
+		<tr>
+			<th>Juiz: </th>
+			<td>PEDRO BRAGA FILHO</td>
+		</tr>
+		<tr>
+			<th>Data de Autua&ccedil;&atilde;o:</th>
+			<td>15/01/2018</td>
+		</tr>
+		<tr>
+			<th>Distribui&ccedil;&atilde;o:</th>
+			<td>	2 - DISTRIBUICAO AUTOMATICA - 18/01/2018<br/>		</td>
+		</tr>
+		<tr>
+			<th>N&ordm; de volumes:</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Assunto&nbsp;da&nbsp;Peti&ccedil;&atilde;o:</th>
+			<td>	6046 - Conselhos Regionais e Afins Anuidade<br />    	</td>
+		</tr>
+            <tr>
+			<th>Observa&ccedil;&atilde;o:&nbsp;</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Localiza&ccedil;&atilde;o:</th>
+			<td></td>
+		</tr> 
+          </tbody>
+</table></div><div id="aba-movimentacao"><h3>Movimenta&ccedil;&atilde;o</h3>
+<table>
+	<colgroup>
+		<col width="140px">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Data</th>
+			<th>Cod</th>
+			<th>Descri&ccedil;&atilde;o</th>
+			<th>Complemento</th>
+		</tr>
+	</thead>
+	<tbody>
+		                        <tr>
+			<td>16/05/2019 17:53:15&nbsp;</td>
+			<td>159&nbsp;</td>
+			<td class="container_desc">DILIGENCIA ORDENADA DEFERIDA&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>16/05/2019 17:53:05&nbsp;</td>
+			<td>153&nbsp;</td>
+			<td class="container_desc">DEVOLVIDOS C DECISAO OUTROS ESPECIFICAR&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>16/05/2019 17:52:47&nbsp;</td>
+			<td>137&nbsp;</td>
+			<td class="container_desc">CONCLUSOS PARA DECISAO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>26/11/2018 17:44:04&nbsp;</td>
+			<td>210&nbsp;</td>
+			<td class="container_desc">PETICAO OFICIO DOCUMENTO JUNTADOO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>26/11/2018 17:44:03&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>09/11/2018 08:05:53&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS ADVOGADO AUTOR&nbsp;</td>
+			<td>EST AUTORIAZADO ADVGBA00009269 JOSE ANTONIO ROCHA SILVA TELEFONE713453891691041769 &nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/10/2018 15:41:58&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA AUTOR OUTROS&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/10/2018 15:41:41&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS PELO DIRETOR SECRETARIA PARA ATO ORDINATORIO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>10/05/2018 11:43:16&nbsp;</td>
+			<td>132&nbsp;</td>
+			<td class="container_desc">CITACAO PELA IMPRENSA PUBLICADO EDITAL CERTIFICADA PUBLICACAO&nbsp;</td>
+			<td>EDITAL PUBLICADO EM 10052018&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>10/05/2018 11:43:10&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS PELO DIRETOR SECRETARIA PARA ATO ORDINATORIO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>03/05/2018 00:00:00&nbsp;</td>
+			<td>132&nbsp;</td>
+			<td class="container_desc">CITACAO PELA IMPRENSA EDITAL EXPEDIDO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>15/03/2018 09:54:22&nbsp;</td>
+			<td>132&nbsp;</td>
+			<td class="container_desc">CITACAO PELA IMPRENSA ORDENADA PUBLICACAO EDITAL&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>14/03/2018 09:54:13&nbsp;</td>
+			<td>195&nbsp;</td>
+			<td class="container_desc">MANDADO DEVOLVIDO NAO CUMPRIDO CITACAO PENHORA E AVALIACAO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/02/2018 17:13:43&nbsp;</td>
+			<td>201&nbsp;</td>
+			<td class="container_desc">MANDADO REMETIDO CENTRAL CITACAO PENHORA E AVALIACAO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/02/2018 17:13:27&nbsp;</td>
+			<td>197&nbsp;</td>
+			<td class="container_desc">MANDADO EXPEDIDO CITACAO PENHORA E AVALIACAO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/02/2018 17:13:11&nbsp;</td>
+			<td>198&nbsp;</td>
+			<td class="container_desc">MANDADO ORDENADA EXPEDICAO AGUARDANDO ATO CITACAO PENHORA E AVALIACAO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/02/2018 17:10:54&nbsp;</td>
+			<td>154&nbsp;</td>
+			<td class="container_desc">DEVOLVIDOS C DESPACHO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/02/2018 17:10:37&nbsp;</td>
+			<td>137&nbsp;</td>
+			<td class="container_desc">CONCLUSOS PARA DESPACHO&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>19/01/2018 14:42:35&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>19/01/2018 10:54:15&nbsp;</td>
+			<td>223&nbsp;</td>
+			<td class="container_desc">REMETIDOS VARA PELA DISTRIBUICAO&nbsp;</td>
+			<td>SEYATESECLABA&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>19/01/2018 10:54:12&nbsp;</td>
+			<td>170&nbsp;</td>
+			<td class="container_desc">INICIAL AUTUADA&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>18/01/2018 17:58:48&nbsp;</td>
+			<td>2&nbsp;</td>
+			<td class="container_desc">DISTRIBUICAO AUTOMATICA&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+			</tbody>
+</table>
+</div><div id="aba-partes"></div><div id="aba-documentos"></div><div id="aba-publicacao"><h3>Publica&ccedil;&atilde;o</h3>
+<div class="notice">Nenhum registro encontrado para este processo. Caso o processo seja digital, verifique a aba de
+	documentos.</div>
+</div><div id="aba-inteiro-teor"><h3>Inteiro Teor</h3>
+<!--red-->
+<table style="width: 500px;">
+	<colgroup>
+		<col width="50px">
+		<col width="200px">
+		<col width="140px">
+		<col width="140px">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Sequencial</th>
+			<th>Descri&ccedil;&atilde;o do Documento</th>
+			<th>Data de Inclus&atilde;o</th>
+			<th>Visualizar*</th>
+		</tr>
+	</thead>
+	<tbody>
+                            <tr>
+			<td>1&nbsp;</td>
+			<td>Despacho&nbsp;</td>
+			<td>
+                        20/02/2018 19:09:29                    </td>
+			<!-- <td><a href="/Processos/ProcessosJEF/ConsProcJefArquivo.php?download=1&proc_id=10009988629&cpw=47806253300262&secao=BA">visualizar</a></td> -->
+			<td class="container_link"><a class="link_doc"
+				href="/consultaProcessual/arquivo/login/index.php?sistema=red&download=1&proc_id=10009988629&cpw=47806253300262&secao=BA&proc=00011008620184013300&desc=Despacho">visualizar</a><img
+				src="/consultaProcessual/images/ajax-loader-pequeno.gif" style="display: none; margin-left: 4px;" /></td>
+		</tr>
+                        </tbody>
+</table>
+
+
+
+
+
+ </div>                            </div>
+						<div style="text-align: right;">
+                                PROCESSUAL / F&Iacute;SICO / N                            </div>
+
+
+
+                         
+                         
+                         
+                                                <div class="span-18 clear" style="clear: both; float: none;">
+							<p>
+								<span>Emitido pelo site www.trf1.jus.br em 17/09/2019 &agrave;s 01:49:32 Consulta respondida em 0,504 segundos<!--172.16.3.159--></span>
+							</p>
+							<p>
+								<span>Este servi&ccedil;o tem car&aacute;ter meramente informativo, portanto, SEM cunho oficial.</span>
+							</p>
+						</div>
+                                            </div>
+				</div>
+			</div>
+		</div>
+        <div id="footer">
+	<div class="container" style="display: block; width: 960px; overflow: hidden; margin: 0 auto;">
+		<div class="box-footer span-24">
+			<span>Edif&iacute;cio Sede 1: SAU/SUL Quadra 2, Bloco A, Pra&ccedil;a dos Tribunais Superiores</span>
+			<br />
+			<span>CEP: 70070-900 | Bras&iacute;lia/DF</span>
+					</div>
+	</div>
+	<div id="foot">
+		<div class="container">
+			<div id="direitos"></div>
+		</div>
+	</div>
+</div>
+<div id="loading" class="span-4">
+	<div class="span-1 last" style="margin: 1px 0 0 30px">
+		<img alt="Carregando..." src="/consultaProcessual/images/ajax-loader_1.gif" />
+	</div>
+	<div class="span-2">
+		<strong>Aguarde...</strong>
+	</div>
+</div>
+        <div id="download">
+			<div class="flash" style="display: none;"></div>
+			<div id="container_pbar">
+				<div id="pbar_label"></div>
+				<div id="pbar" style="height: 20px;"></div>
+			</div>
+			<div id="container_download"></div>
+		</div>
+		<div id="dialog_print"></div>
+		<div id="dialog_pub"></div>
+		<div id="dialog"></div>
+		<div id="dialog_login">
+			<!--<form name="form1" id="form1" method="post" action="/consultaProcessual/arquivo/login/autenticar.php?secao=">-->
+			<form name="frm-mudar-usuario" id="frm-mudar-usuario" method="post"
+				action="/consultaProcessual/arquivo/login/mudarLogin.php?secao=BA">
+				<div class="flash" style="display: none;"></div>
+				<div class="span-9">
+					<div class="span-4" style="text-align: left;">
+						<label>CPF<span id="matricula" style="display: none"> / Matr&iacute;cula</span>:
+						</label>
+					</div>
+					<div class="span-4" style="text-align: left;">
+						<input class="text span-3" type="text" name="cpf" id="cpf" value="" />
+					</div>
+				</div>
+				<div class="span-9">
+					<div class="span-4" style="text-align: left;">
+						<label>Senha: </label>
+					</div>
+					<div class="span-4" style="text-align: left;">
+						<input class="text span-3" type="password" name="senha" id="senha" value="" /> <img class="tiptip"
+							src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;"
+							title="Informar o CPF e senha do cadastro do e-Proc." />
+					
+					</div>
+				</div>
+				<input type="hidden" name="fase_id" value="10011511450" /> <input
+					type="hidden" name="DataCons" value="20190917_1_49_32" />
+                                    <input type="hidden" name="secao" value="BA" />
+                                    <input type="hidden" name="opSec" value="proc" />
+                                    <input type="hidden" name="proc" value="00011008620184013300" />
+                                    <input type="hidden" name="enviar" value="Ok" />
+                                <div class="span-9 esconderImpressao" id="container-secao" style="display: none;">
+					<div class="span-4">
+						<label for="secao">&Oacute;rg&atilde;o</label>
+					</div>
+					<div class="span-4">
+						<select class="consulta" size="1" name="secao" id="secao" disabled="disabled">
+							<option value="">Selecione</option>
+							<option value="TRF1">TRF 1&ordf; Regi&atilde;o</option>
+							<option value="AC">JFAC</option>
+							<option value="AM">JFAM</option>
+							<option value="AP">JFAP</option>
+							<option value="BA">JFBA</option>
+							<option value="DF">JFDF</option>
+							<option value="GO">JFGO</option>
+							<option value="MA">JFMA</option>
+							<option value="MG">JFMG</option>
+							<option value="MT">JFMT</option>
+							<option value="PA">JFPA</option>
+							<option value="PI">JFPI</option>
+							<option value="RO">JFRO</option>
+							<option value="RR">JFRR</option>
+							<option value="TO">JFTO</option>
+						</select>
+					</div>
+				</div>
+				<div class="span-9" style="text-align: center;">OU</div>
+				<div class="span-9" style="text-align: left;">
+					<div class="span-4">
+						<label>Chave de Acesso: </label>
+					</div>
+					<div class="span-4">
+						<input class="text span-3" type="text" name="chave" id="chave" value="" /><img class="tiptip"
+							title="Informar  o código fornecido pela Vara para acesso aos documentos."
+							src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;" />
+					</div>
+				</div>
+				<!--
+                <div id='chave'>
+	                <div class="span-8">
+
+	                    <div>
+	                    	<input type="submit" value="Ok" class="ui-button ui-widget ui-state-default ui-corner-all" name="enviarChave" id="enviarChave" style="width:270px"/>
+	                    </div>
+	                </div>
+	            </div>
+                    -->
+				<!--div class="span-9" style="text-align: right;"><input type="submit" value="Ok" name="enviar" id="enviar" /> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Usuário não cadastrado, <a target="_blank" href="http://www.trf1.jus.br/Processos/ePeticao/ePetCadCpfAdv.php?Oper=F">clique aqui.</a></div-->
+				<div class="span-9" style="text-align: right;">
+					<input type="submit" value="Ok" name="enviar" id="enviar" />
+				</div>
+			</form>
+		</div>
+		<div id="iframe_print" style="display: none">
+			<h1>Tribunal Regional Federal da Primeira Regi&atilde;o</h1>
+			<h2>Se&ccedil;&atilde;o Judici&aacute;ria da Bahia</h2>
+                        <div id="prn-processo"></div>
+			<div id="prn-movimentacao"></div>
+			<div id="prn-partes"></div>
+			<div id="prn-documentos"></div>
+			<div id="prn-publicacao"></div>
+			<div id="prn-abs-1"></div>
+                    </div>
+		<script>
+		$(function(){
+			$(".tiptip").tipTip();
+		});
+		</script>
+		<div id="tiptip_holder">
+			<div id="tiptip_content">
+				<div id="tiptip_arrow">
+					<div id="tiptip_arrow_inner"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>

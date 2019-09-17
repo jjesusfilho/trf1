@@ -1,0 +1,876 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" type="image/png" href="/favicon.ico">
+<!-- Framework CSS -->
+<link rel="stylesheet" href="/consultaProcessual/css/blueprint/screen.css" type="text/css"
+	media="screen">
+<link rel="stylesheet" href="/consultaProcessual/css/blueprint/print.css" type="text/css" media="print">
+<!--[if IE]><link rel="stylesheet" href="/consultaProcessual/css/blueprint-0.8/ie.css" type="text/css" media="screen"><![endif]-->
+
+<link rel="stylesheet" type="text/css" media="screen" href="/consultaProcessual/css/template_css.css?2" />
+<link rel="stylesheet" type="text/css" media="screen" title="altoContraste"
+	href="/consultaProcessual/css/template_altoContraste.css?2" disabled="disabled" />
+<link rel="stylesheet" type="text/css" media="screen" title="monocromatica"
+	href="/consultaProcessual/css/template_monocromatica.css?2" disabled="disabled" />
+<link rel="stylesheet" href="/consultaProcessual/css/index.css?2" type="text/css" media="screen" />
+<script type="text/javascript">
+	var baseUrl = '/consultaProcessual';
+</script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-1.6.1.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/consultaProcessual/js/jquery-ui-1.8.13/css/redmond/jquery-ui-1.8.13.custom.css" />
+<script type="text/javascript" src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.crypt.js"></script>
+<script type="text/javascript" src='/consultaProcessual/js/Cookie.js'></script>
+<script type="text/javascript" src='/consultaProcessual/js/jquery.fontResize.js'></script>
+<script type="text/javascript" src='/consultaProcessual/js/index.js'></script>
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+<script type="text/javascript">
+    var appCache = window.applicationCache;
+
+    if (appCache != null) {
+        appCache.update(); // Attempt to update the user's cache.
+    }
+
+    if (appCache.status == window.applicationCache.UPDATEREADY) {
+        appCache.swapCache();  // The fetch was successful, swap in the new cache.
+    }
+</script>
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-27512799-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+<!-- IMplementacao reCaptchaV3 
+<script type='text/javascript' src='/consultaProcessual/js/ReCaptchaV3.js'></script>
+<script>
+    $(document).ready(function() {
+        ReCaptchaV3.init();
+    });
+</script> -->
+<!-- IMplementacao reCaptchaV3 -->
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/redmond/jquery-ui.css" />-->
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/consultaProcessual/js/jquery-ui-1.8.13/css/redmond/jquery-ui-1.8.13.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/consultaProcessual/css/tipTip.css" />
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>-->
+<script type="text/javascript"
+	src="/consultaProcessual/js/jquery-ui-1.8.13/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.dialogr.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.watermarkinput.js"></script>
+<script type="text/javascript" src="/consultaProcessual/js/processo.js?1568695723"></script>
+<script type="text/javascript" src="/consultaProcessual/js/jquery.tipTip.minified.js"></script>
+<style type="text/css">
+tbody th {
+	text-align: right;
+}
+
+.ui-widget-content a {
+	color: #2E6E9E;
+	text-decoration: none;
+	outline: 0;
+}
+
+label {
+	margin: 0.5em 0;
+	display: block;
+}
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="/consultaProcessual/css/print.css" />
+
+</head>
+<body>
+	<div id="container" class="container">
+		<div id="header">
+                <div id="topo">
+	<h1>
+		<a href="#" title="Tribunal Regional Federal da Primeira Regi&atilde;o">Tribunal Regional Federal da Primeira
+			Regi&atilde;o</a>
+	</h1>
+	<div id="topo-center">
+		<p id="trf1">Tribunal Regional Federal da Primeira Regi&atilde;o</p>
+		<p id="trf1-telefone">
+		(71) 3617-2600        </p>
+	</div>
+</div>            </div>
+		<div id="tools" class="span-24 clear">
+			<div id="bread" class="span-20 first">
+                    <ul>
+	<li class="bread-first"><a href="#">In&iacute;cio</a></li>
+				<li><a href="/consultaProcessual/index.php?secao=BA">Consulta Processual / BA</a></li>
+					<li><a href="/consultaProcessual/numeroProcesso.php?secao=BA">Por n&uacute;mero do processo</a></li>
+						<li><span>0001028-02.2018.4.01.3300</span></li>
+		</ul>                </div>
+			<div id="imprimir" class="span-1">
+				<a href="#" rel="#container_print" title="Imprimir"><span>Imprimir</span></a>
+			</div>
+			<div id="acessibilidade" class="span-3 last"></div>
+		</div>
+		<div id="container_print" class="span-24 clear esconderImpressao hide">
+			<div class="span-3 first esconderImpressao">
+				<label><input type="checkbox" name="prnProcesso" value="#aba-processo" rel="" checked="checked" /> Processo</label>
+
+			</div>
+			<div class="span-4 esconderImpressao">
+				<label><input type="checkbox" name="prnMovimentacao" value="#aba-movimentacao" rel="#qtdMov" checked="checked" />
+					Movimenta&ccedil;&otilde;es</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-movimentacao" name="qtdMov" id="qtdMov" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnPartes" value="#aba-partes" rel="#qtdParte" checked="checked" /> Partes</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-partes" name="qtdParte" id="qtdParte" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnDocumentos" value="#aba-documentos" rel="#qtdDoc" checked="checked" />
+					Documentos</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-documentos" name="qtdDoc" id="qtdDoc" maxlength="3" size="10" />
+				</p>
+			</div>
+
+                                <div class="span-4 esconderImpressao">
+				<label><input type="checkbox" name="prnPublicacoes" value="#aba-publicacao" rel="#qtdPub" checked="checked" />
+					Publica&ccedil;&otilde;es</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#aba-publicacao" name="qtdPub" id="qtdPub" maxlength="3" size="10" />
+				</p>
+			</div>
+                
+                <div class="span-3 esconderImpressao">
+				<label><input type="checkbox" name="prnAcessos" value="#ui-tabs-1" rel="#qtdAce" checked="checked" /> Acessos</label>
+				<p>
+					<input type="text" class="qtd-prn" rel="#ui-tabs-1" name="qtdAce" id="qtdAce" maxlength="3" size="10" />
+				</p>
+			</div>
+			<div class="span-3 last esconderImpressao">
+				<button class="btn-print">Imprimir</button>
+			</div>
+		</div>
+		<div class="span-24 first last">
+			<div id="left_side" class="span-5">
+                    <div id="menu-tools" class="span-5 first last">
+
+	<div class="span-5 first last">
+
+		<a id="menu1-close" class="ui-widget" target="_blank"
+			href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7">Relatório de Indisponibilidade</a>
+
+	</div>
+
+	<!--div class="span-2 last">
+        
+		<a id="menu-open" href="#">Abrir todos</a>
+        
+	</div-->
+</div>
+<div class="span-5 first last append-bottom menu menu-verde">
+	<h3>
+		<a href="#acessoRapido">Op&ccedil;&otilde;es de pesquisa</a>
+	</h3>
+    	<ul class="filetree">
+
+		<li><a title="N&uacute;mero do Processo"
+			href="/consultaProcessual/numeroProcesso.php?secao=BA">N&uacute;mero do
+				Processo</a></li>
+		<li><a title="Nome da Parte"
+			href="/consultaProcessual/nomeParte.php?secao=BA">Nome da Parte</a></li>
+		<li><a title="CPF/CNPJ da parte"
+			href="/consultaProcessual/cpfCnpjParte.php?secao=BA">CPF/CNPJ da parte</a></li>
+		<li><a title="Nome do Advogado"
+			href="/consultaProcessual/nomeAdvogado.php?secao=BA">Nome do Advogado</a></li>
+		<li><a title="C&oacute;digo OAB do Advogado"
+			href="/consultaProcessual/oabAdvogado.php?secao=BA">C&oacute;digo OAB do
+				Advogado</a></li>
+		<li><a title="Mandados Judiciais"
+			href="/consultaProcessual/mandadoJudicial.php?secao=BA">Mandados Judiciais</a></li>
+		<!--<li><a title="N&uacute;mero do Processo Original (JEF)" href="#">N&uacute;mero do Processo Original (JEF)</a></li>-->
+		<li><a title="Protocolo da Peti&ccedil;&atilde;o"
+			href="/consultaProcessual/protocoloPeticao.php?secao=BA">Protocolo da
+				Peti&ccedil;&atilde;o</a></li>
+		<li><a title="Protocolo SEDEX"
+			href="/consultaProcessual/protocoloSedex.php?secao=BA">Protocolo SEDEX</a></li>
+
+	</ul>
+    </div>                </div>
+			<div id="content" class="span-19 last">
+				<div id="content-center" class="span-19 last">
+                        
+						<!--div id="fazer_login1" class="span-8 last" style="display: block;">
+							<a class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" target="_blank" href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7"><span class="ui-button-text">Relatório de Indisponibilidade</span></a>
+						</div-->
+					<div class="span-10 last" id="tools-usuario" style="float: right;">
+													<div class="span-7 last" id="tools-usuario" style="float: right; text-align: right;">
+														<div id="fazer_login" class="span-7 last" style="display: block;">
+									<a href="#">Login</a>
+								</div>
+
+								<div id="user-name" class="span-7 last" style="float:left; display: none;">
+
+									<strong id="cpf-usuario">
+                                                                        </strong> / <span id="perfil-usuario">
+                                                                        </span> <span id="cnj-usuario">
+                                                                        </span> / <a id="link_sair" rel="link_sair"
+										href="/consultaProcessual/arquivo/login/sairLogin.php">Sair</a>
+								</div>
+								                            </div>
+						</div>
+					</div>
+					<div class="span-19 last clear">
+						<div id="acessibilidade"></div>
+					</div>
+					<!-- <div class="notice span-12 last clear">Sistemas em manutenção</div> -->
+					<div class="span-19 last clear noticia-letra">
+                                                    <div id="tabs">
+							<ul>
+                                                                            <li><a href="#aba-processo">Processo</a></li>
+								<li><a href="#aba-movimentacao">Movimenta&ccedil;&atilde;o</a></li>
+								<li><a href="#aba-partes"
+									onclick="checkPartes('/consultaProcessual','00010280220184013300','BA','processual');">Partes</a></li>
+								<!--li><a href="#aba-partes">Partes</a></li-->
+								<li><a href="#aba-documentos"
+									onclick="checkDocumentos('/consultaProcessual','00010280220184013300','BA','processual');">Documentos</a></li>
+								<li><a href="#aba-publicacao">Publica&ccedil;&otilde;es</a></li>
+								<li><a href="#aba-inteiro-teor">Inteiro Teor</a></li>
+								<li><a
+									href="/consultaProcessual/arquivo/acessos.php?proc=00010280220184013300">Acessos</a></li>
+                                                                    </ul>
+                                <div id="aba-processo"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<table>
+
+	<colgroup>
+		<col class="span-3" />
+		<col class="span-10" />
+	</colgroup>
+	<tbody>
+		<tr>
+
+			<th>Processo:</th>
+
+
+			<td>0001028-02.2018.4.01.3300</td>
+		</tr>
+        <tr>
+			<th>Classe:</th>
+			<td>	386 - Execução da Pena<br />		</td>
+		</tr>
+		<tr>
+			<th>Vara:</th>
+			<td>17ª VARA SALVADOR</td>
+		</tr>
+		<tr>
+			<th>Juiz: </th>
+			<td>ANTONIO OSWALDO SCARPA</td>
+		</tr>
+		<tr>
+			<th>Data de Autua&ccedil;&atilde;o:</th>
+			<td>12/01/2018</td>
+		</tr>
+		<tr>
+			<th>Distribui&ccedil;&atilde;o:</th>
+			<td>	3 - DISTRIBUICAO POR DEPENDENCIA - 12/01/2018<br/>		</td>
+		</tr>
+		<tr>
+			<th>N&ordm; de volumes:</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Assunto&nbsp;da&nbsp;Peti&ccedil;&atilde;o:</th>
+			<td>	3432 - Estelionato Majorado <br />    	</td>
+		</tr>
+            <tr>
+			<th>Observa&ccedil;&atilde;o:&nbsp;</th>
+			<td>DESPACHO DE FLS412 EXARADO PELO MM JUIZ FEDERAL DA 17A VARA DETERMINA A DISTRIBUICAO DESTE FEITO</td>
+		</tr>
+		<tr>
+			<th>Localiza&ccedil;&atilde;o:</th>
+			<td>L-6 - PREPARAR DESPACHO</td>
+		</tr> 
+            <tr>
+			<th>Principal:</th>
+			<td><div class="span-4"><a href="/consultaProcessual/processo.php?proc=229651020144013300&secao=BA">0022965-10.2014.4.01.3300</a></div></td>
+		</tr>
+      </tbody>
+</table></div><div id="aba-movimentacao"><h3>Movimenta&ccedil;&atilde;o</h3>
+<table>
+	<colgroup>
+		<col width="140px">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Data</th>
+			<th>Cod</th>
+			<th>Descri&ccedil;&atilde;o</th>
+			<th>Complemento</th>
+		</tr>
+	</thead>
+	<tbody>
+		                        <tr>
+			<td>25/07/2019 15:24:17&nbsp;</td>
+			<td>204&nbsp;</td>
+			<td class="container_desc">OFICIO EXPEDIDO&nbsp;</td>
+			<td>OF N 125SEXEC17ª VARA ENCAMINHANDO MANDADO DE PRISÃO N 0152019 PARA SRDPFBA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>24/05/2019 18:48:16&nbsp;</td>
+			<td>198&nbsp;</td>
+			<td class="container_desc">MANDADO ORDENADA EXPEDICAO AGUARDANDO ATO OUTROS ESPECIFICAR&nbsp;</td>
+			<td>MANDADO DE PRISÃO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>16/05/2019 18:05:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO GABJU AUDIÊNCIA NÃO REALIZADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>16/05/2019 14:03:34&nbsp;</td>
+			<td>119&nbsp;</td>
+			<td class="container_desc">AUDIENCIA NAO REALIZADA OUTRAS ESPECIFICAR&nbsp;</td>
+			<td>EXECUÇÃO PENAL AUDIENCIA ADMONITORIA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/04/2019 14:33:47&nbsp;</td>
+			<td>179&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO PELA IMPRENSA PUBLICADO DESPACHO&nbsp;</td>
+			<td>Despacho de fl 52 audiência dia 14052019 às 14h45 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>15/04/2019 13:46:00&nbsp;</td>
+			<td>178&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO PELA IMPRENSA PUBLICACAO REMETIDA IMPRENSA DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/04/2019 13:28:40&nbsp;</td>
+			<td>210&nbsp;</td>
+			<td class="container_desc">PETICAO OFICIO DOCUMENTO JUNTADOO&nbsp;</td>
+			<td>JUNTADA DO MANDADO DE INTIMAÇÃO N 0242019SEXEC SEM CUMPRIMENTO E DO PRONUNCIAMENTO DO MINISTÉRIO PÚBLICO FEDERAL Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>27/03/2019 17:47:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF COM PRONUNCIAMENTO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>21/03/2019 12:53:13&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>21/03/2019 11:11:32&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO EXPEDIDO&nbsp;</td>
+			<td>O MANDADO DE INTIMAÇÃO N 0242019SEXEC PARA INTIMAÇÃO DO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>12/02/2019 13:05:00&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL AGUARDANDO EXPEDICAO MANDADO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>12/02/2019 13:03:35&nbsp;</td>
+			<td>161&nbsp;</td>
+			<td class="container_desc">EXECUCAO PENAL AUDIENCIA ADMONITORIA DESIGNADA&nbsp;</td>
+			<td>01 SENTENCIADO DATA14052019 HORA1445 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/02/2019 18:29:40&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>COM DESPACHO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/02/2019 17:09:00&nbsp;</td>
+			<td>154&nbsp;</td>
+			<td class="container_desc">DEVOLVIDOS C DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/02/2019 15:39:00&nbsp;</td>
+			<td>137&nbsp;</td>
+			<td class="container_desc">CONCLUSOS PARA DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>28/11/2018 15:02:53&nbsp;</td>
+			<td>210&nbsp;</td>
+			<td class="container_desc">PETICAO OFICIO DOCUMENTO JUNTADOO&nbsp;</td>
+			<td>JUNTADA DO PRONUNCIAMENTO DO MINISTÉRIO PÚBLICO FEDERAL Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>24/09/2018 16:16:12&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF COM PRONUNCIAMENTO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/09/2018 13:27:52&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>04/09/2018 18:40:30&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA MPF&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>03/09/2018 15:44:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO GABJU AUDIÊNCIA NÃO REALIZADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>03/09/2018 11:48:35&nbsp;</td>
+			<td>118&nbsp;</td>
+			<td class="container_desc">AUDIENCIA REALIZADA OUTRAS ESPECIFICAR&nbsp;</td>
+			<td>DESPACHO REMETER PROCESSO AO MPF PARA ANÁLISE DE PRESCRIÇÃO QTDE DEPOIMENT0 QTDE TESTEM0 QTDE PERITOS0 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>27/08/2018 14:09:08&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO DEVOLVIDO CUMPRIDO&nbsp;</td>
+			<td>MANDADO DE INTIMACAO Nº 402018 SEXEC Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>06/08/2018 17:34:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/08/2018 13:12:18&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF QTDE FOLHAS44 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/08/2018 10:16:37&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA MPF&nbsp;</td>
+			<td>DA ATA DE AUDIÊNCIA DE FL 42 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/08/2018 10:15:28&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO REMETIDO CENTRAL&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/08/2018 10:10:10&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO EXPEDIDO&nbsp;</td>
+			<td>MAND Nº 402018 SEXEC INTIMAÇÃO DE AUDIÊNCIA DIA 30082018 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>18/07/2018 17:18:42&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL AGUARDANDO EXPEDICAO MANDADO&nbsp;</td>
+			<td>INTIMAÇÃO DO SENTENCIADO PARA A AUDIÊNCIA DESIGNADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>18/07/2018 17:18:28&nbsp;</td>
+			<td>161&nbsp;</td>
+			<td class="container_desc">EXECUCAO PENAL AUDIENCIA ADMONITORIA DESIGNADA&nbsp;</td>
+			<td>01 ADMONITÓRIA DATA30082018 HORA1445 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>13/07/2018 16:44:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO GABJU AUDIÊNCIA NÃO REALIZADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>13/07/2018 13:57:05&nbsp;</td>
+			<td>174&nbsp;</td>
+			<td class="container_desc">INTERROGATORIO NAO REALIZADO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>13/07/2018 13:56:25&nbsp;</td>
+			<td>119&nbsp;</td>
+			<td class="container_desc">AUDIENCIA NAO REALIZADA INSTRUCAOINQUIRICAO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/07/2018 14:38:46&nbsp;</td>
+			<td>210&nbsp;</td>
+			<td class="container_desc">PETICAO OFICIO DOCUMENTO JUNTADOO&nbsp;</td>
+			<td>PRONUNCIAMENTO DO MPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/07/2018 14:36:56&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF COM PRONUNCIAMENTO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>12/06/2018 13:39:15&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>11/06/2018 15:06:30&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA MPF&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>06/06/2018 18:21:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>COM DESPACHO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>06/06/2018 17:42:00&nbsp;</td>
+			<td>154&nbsp;</td>
+			<td class="container_desc">DEVOLVIDOS C DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>06/06/2018 16:54:56&nbsp;</td>
+			<td>137&nbsp;</td>
+			<td class="container_desc">CONCLUSOS PARA DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>29/05/2018 15:17:49&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>23/05/2018 13:52:02&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/05/2018 10:58:34&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA MPF&nbsp;</td>
+			<td>AUDIÊNCIA DESIGNADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>22/05/2018 10:58:18&nbsp;</td>
+			<td>161&nbsp;</td>
+			<td class="container_desc">EXECUCAO PENAL AUDIENCIA ADMONITORIA DESIGNADA&nbsp;</td>
+			<td>01 ADMONITÓRIA DATA12072018 HORA1445 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>15/05/2018 18:54:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO GABJU AUDIÊNCIA NÃO REALIZADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>15/05/2018 18:23:58&nbsp;</td>
+			<td>119&nbsp;</td>
+			<td class="container_desc">AUDIENCIA NAO REALIZADA ADMONITORIA PROCESSUAL ART 76 DA LEI 909995&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/05/2018 12:28:34&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO DEVOLVIDO NAO CUMPRIDO&nbsp;</td>
+			<td>N 202018 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>25/04/2018 17:39:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DO MPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/04/2018 13:22:22&nbsp;</td>
+			<td>126&nbsp;</td>
+			<td class="container_desc">CARGA RETIRADOS MPF&nbsp;</td>
+			<td>INTERESSADOMPF Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>20/04/2018 13:12:55&nbsp;</td>
+			<td>185&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO VISTA ORDENADA MPF&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>19/04/2018 18:55:00&nbsp;</td>
+			<td>179&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO PELA IMPRENSA PUBLICADO DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>17/04/2018 14:43:00&nbsp;</td>
+			<td>178&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO PELA IMPRENSA PUBLICACAO REMETIDA IMPRENSA DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>17/04/2018 13:31:39&nbsp;</td>
+			<td>176&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO PELA IMPRENSA ORDENADA PUBLICACAO DESPACHO&nbsp;</td>
+			<td>PUBLICAR DESPACHO DESIGNANDO AUDIÊNCIA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>16/04/2018 13:29:59&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL MANDADO EXPEDIDO&nbsp;</td>
+			<td>MANDADO Nº 202018 INTIMAÇÃO DE AUDIÊNCIA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>03/04/2018 18:49:33&nbsp;</td>
+			<td>184&nbsp;</td>
+			<td class="container_desc">INTIMACAO NOTIFICACAO POR OFICIAL AGUARDANDO EXPEDICAO MANDADO&nbsp;</td>
+			<td>INTIMAR OA SENTENCIADOA PARA A AUDIÊNCIA ADMONITÓRIA DESIGNADA Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>03/04/2018 18:49:16&nbsp;</td>
+			<td>161&nbsp;</td>
+			<td class="container_desc">EXECUCAO PENAL AUDIENCIA ADMONITORIA DESIGNADA&nbsp;</td>
+			<td>DATA15052018 HORA1440 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/04/2018 17:50:00&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>COM DESPACHO Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/04/2018 17:30:00&nbsp;</td>
+			<td>154&nbsp;</td>
+			<td class="container_desc">DEVOLVIDOS C DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>02/04/2018 15:49:00&nbsp;</td>
+			<td>137&nbsp;</td>
+			<td class="container_desc">CONCLUSOS PARA DESPACHO&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>13/03/2018 18:47:26&nbsp;</td>
+			<td>218&nbsp;</td>
+			<td class="container_desc">RECEBIDOS EM SECRETARIA&nbsp;</td>
+			<td>DA DISTRIBUIÇÃO EM 150118 Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+		                        <tr>
+			<td>12/01/2018 18:32:21&nbsp;</td>
+			<td>3&nbsp;</td>
+			<td class="container_desc">DISTRIBUICAO POR DEPENDENCIA&nbsp;</td>
+			<td> Nº do Inquerito 1662009&nbsp;</td>
+		</tr>
+			</tbody>
+</table>
+</div><div id="aba-partes"></div><div id="aba-documentos"></div><div id="aba-publicacao"><h3>Publica&ccedil;&atilde;o</h3>
+<table>
+	<colgroup>
+		<col width="140px">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Data</th>
+			<th>Tipo</th>
+			<th>Texto</th>
+		</tr>
+	</thead>
+	<tbody>
+                        <tr>
+			<td>17/04/2018&nbsp;</td>
+			<td>Despacho&nbsp;</td>
+			<td>Despacho de fl 271Designo o dia 15052018 às 14h40 para realização de audiência admonitória a fim de dar início ao cumprimento da pena restritiva de direito a que o sentenciado WELLINGTON DE SOUZA ALMEIDA foi condenado2Intimese o apenado para comparecer à audiência designada &nbsp;</td>
+		</tr>
+                        <tr>
+			<td>15/04/2019&nbsp;</td>
+			<td>Despacho&nbsp;</td>
+			<td>Despacho de fl 521 Acolho o pronunciamento do Ministério Público Federal de fls 50512Designo o dia 14052019 às 14h45 para realização de audiência admonitória a fim de adequar o cumprimento das penas restritivas de direitos a que o sentenciado WELLINGTON DE SOUZA ALMEIDA foi condenado3Intimese o apenado para comparecer à audiência designada5Intimese a defesa do sentenciado&nbsp;</td>
+		</tr>
+                    </tbody>
+</table>
+</div><div id="aba-inteiro-teor"><h3>Inteiro Teor</h3>
+<!--red-->
+<div class="notice">N&atilde;o h&aacute; documentos de inteiro teor para este processo.</div>
+
+
+
+
+
+</div>                            </div>
+						<div style="text-align: right;">
+                                PROCESSUAL / F&Iacute;SICO / N                            </div>
+
+
+
+                         
+                         
+                         
+                                                <div class="span-18 clear" style="clear: both; float: none;">
+							<p>
+								<span>Emitido pelo site www.trf1.jus.br em 17/09/2019 &agrave;s 01:48:43 Consulta respondida em 0,926 segundos<!--172.16.3.159--></span>
+							</p>
+							<p>
+								<span>Este servi&ccedil;o tem car&aacute;ter meramente informativo, portanto, SEM cunho oficial.</span>
+							</p>
+						</div>
+                                            </div>
+				</div>
+			</div>
+		</div>
+        <div id="footer">
+	<div class="container" style="display: block; width: 960px; overflow: hidden; margin: 0 auto;">
+		<div class="box-footer span-24">
+			<span>Edif&iacute;cio Sede 1: SAU/SUL Quadra 2, Bloco A, Pra&ccedil;a dos Tribunais Superiores</span>
+			<br />
+			<span>CEP: 70070-900 | Bras&iacute;lia/DF</span>
+					</div>
+	</div>
+	<div id="foot">
+		<div class="container">
+			<div id="direitos"></div>
+		</div>
+	</div>
+</div>
+<div id="loading" class="span-4">
+	<div class="span-1 last" style="margin: 1px 0 0 30px">
+		<img alt="Carregando..." src="/consultaProcessual/images/ajax-loader_1.gif" />
+	</div>
+	<div class="span-2">
+		<strong>Aguarde...</strong>
+	</div>
+</div>
+        <div id="download">
+			<div class="flash" style="display: none;"></div>
+			<div id="container_pbar">
+				<div id="pbar_label"></div>
+				<div id="pbar" style="height: 20px;"></div>
+			</div>
+			<div id="container_download"></div>
+		</div>
+		<div id="dialog_print"></div>
+		<div id="dialog_pub"></div>
+		<div id="dialog"></div>
+		<div id="dialog_login">
+			<!--<form name="form1" id="form1" method="post" action="/consultaProcessual/arquivo/login/autenticar.php?secao=">-->
+			<form name="frm-mudar-usuario" id="frm-mudar-usuario" method="post"
+				action="/consultaProcessual/arquivo/login/mudarLogin.php?secao=BA">
+				<div class="flash" style="display: none;"></div>
+				<div class="span-9">
+					<div class="span-4" style="text-align: left;">
+						<label>CPF<span id="matricula" style="display: none"> / Matr&iacute;cula</span>:
+						</label>
+					</div>
+					<div class="span-4" style="text-align: left;">
+						<input class="text span-3" type="text" name="cpf" id="cpf" value="" />
+					</div>
+				</div>
+				<div class="span-9">
+					<div class="span-4" style="text-align: left;">
+						<label>Senha: </label>
+					</div>
+					<div class="span-4" style="text-align: left;">
+						<input class="text span-3" type="password" name="senha" id="senha" value="" /> <img class="tiptip"
+							src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;"
+							title="Informar o CPF e senha do cadastro do e-Proc." />
+					
+					</div>
+				</div>
+				<input type="hidden" name="fase_id" value="10011511366" /> <input
+					type="hidden" name="DataCons" value="20190917_1_48_43" />
+                                    <input type="hidden" name="secao" value="BA" />
+                                    <input type="hidden" name="opSec" value="proc" />
+                                    <input type="hidden" name="proc" value="00010280220184013300" />
+                                    <input type="hidden" name="enviar" value="Ok" />
+                                <div class="span-9 esconderImpressao" id="container-secao" style="display: none;">
+					<div class="span-4">
+						<label for="secao">&Oacute;rg&atilde;o</label>
+					</div>
+					<div class="span-4">
+						<select class="consulta" size="1" name="secao" id="secao" disabled="disabled">
+							<option value="">Selecione</option>
+							<option value="TRF1">TRF 1&ordf; Regi&atilde;o</option>
+							<option value="AC">JFAC</option>
+							<option value="AM">JFAM</option>
+							<option value="AP">JFAP</option>
+							<option value="BA">JFBA</option>
+							<option value="DF">JFDF</option>
+							<option value="GO">JFGO</option>
+							<option value="MA">JFMA</option>
+							<option value="MG">JFMG</option>
+							<option value="MT">JFMT</option>
+							<option value="PA">JFPA</option>
+							<option value="PI">JFPI</option>
+							<option value="RO">JFRO</option>
+							<option value="RR">JFRR</option>
+							<option value="TO">JFTO</option>
+						</select>
+					</div>
+				</div>
+				<div class="span-9" style="text-align: center;">OU</div>
+				<div class="span-9" style="text-align: left;">
+					<div class="span-4">
+						<label>Chave de Acesso: </label>
+					</div>
+					<div class="span-4">
+						<input class="text span-3" type="text" name="chave" id="chave" value="" /><img class="tiptip"
+							title="Informar  o código fornecido pela Vara para acesso aos documentos."
+							src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;" />
+					</div>
+				</div>
+				<!--
+                <div id='chave'>
+	                <div class="span-8">
+
+	                    <div>
+	                    	<input type="submit" value="Ok" class="ui-button ui-widget ui-state-default ui-corner-all" name="enviarChave" id="enviarChave" style="width:270px"/>
+	                    </div>
+	                </div>
+	            </div>
+                    -->
+				<!--div class="span-9" style="text-align: right;"><input type="submit" value="Ok" name="enviar" id="enviar" /> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Usuário não cadastrado, <a target="_blank" href="http://www.trf1.jus.br/Processos/ePeticao/ePetCadCpfAdv.php?Oper=F">clique aqui.</a></div-->
+				<div class="span-9" style="text-align: right;">
+					<input type="submit" value="Ok" name="enviar" id="enviar" />
+				</div>
+			</form>
+		</div>
+		<div id="iframe_print" style="display: none">
+			<h1>Tribunal Regional Federal da Primeira Regi&atilde;o</h1>
+			<h2>Se&ccedil;&atilde;o Judici&aacute;ria da Bahia</h2>
+                        <div id="prn-processo"></div>
+			<div id="prn-movimentacao"></div>
+			<div id="prn-partes"></div>
+			<div id="prn-documentos"></div>
+			<div id="prn-publicacao"></div>
+			<div id="prn-abs-1"></div>
+                    </div>
+		<script>
+		$(function(){
+			$(".tiptip").tipTip();
+		});
+		</script>
+		<div id="tiptip_holder">
+			<div id="tiptip_content">
+				<div id="tiptip_arrow">
+					<div id="tiptip_arrow_inner"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>

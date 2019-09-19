@@ -19,6 +19,7 @@ baixar_por_data_trf1<- function(data=NULL,diretorio = "."){
 
   }
 
+  data1<-lubridate::dmy(data) %>% format("%Y_%m_%d")
   url <- "https://arquivo.trf1.jus.br/PesquisaPublicacao.php"
 
   body <-
@@ -29,7 +30,7 @@ baixar_por_data_trf1<- function(data=NULL,diretorio = "."){
       p1 = "",
       orgao = "",
       nome_orgao = "+Todos+",
-      data_publicacao = data
+      data_publicacao = data1
     )
 
   httr::RETRY("POST",
@@ -37,9 +38,8 @@ baixar_por_data_trf1<- function(data=NULL,diretorio = "."){
               body=body,
               encode="form",
               httr::timeout(5),
-            httr::write_disk(file.path(diretorio, Sys.time() %>%
-stringr::str_replace_all("\\D+", "_") %>%
-stringr::str_replace("$", "_pagina.html"))))
+            httr::write_disk(file.path(diretorio, data1 %>%
+stringr::str_replace("$",".html"))))
 }
 
 

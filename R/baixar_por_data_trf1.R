@@ -30,7 +30,7 @@ baixar_por_data_trf1<- function(data=NULL,diretorio = "."){
       p1 = "",
       orgao = "",
       nome_orgao = "+Todos+",
-      data_publicacao = data1
+      data_publicacao = data
     )
 
   httr::RETRY("POST",

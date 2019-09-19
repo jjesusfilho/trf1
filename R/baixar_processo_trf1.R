@@ -22,7 +22,7 @@ httr::set_config(httr::config(ssl_verifypeer = FALSE))
 
 
 
-purrr::walk2(x,codigo,purrr::possibly(~{
+res<-purrr::map2(x,codigo,~{
 
   url <- "https://processual.trf1.jus.br/consultaProcessual/processo.php"
 
@@ -40,7 +40,7 @@ purrr::walk2(x,codigo,purrr::possibly(~{
  resposta <- httr::POST(url,body= body, encode = "form")
 
 
-    if (resposta$content %>% object.size() > 19000){
+    if (resposta$content %>% utils::object.size() > 19000){
     arquivo <-  paste0("_processo_",.x,".html")
 
     resposta$content %>%
@@ -48,8 +48,7 @@ purrr::walk2(x,codigo,purrr::possibly(~{
                   stringr::str_replace_all("\\D+", "_") %>%
                   stringr::str_replace("$", arquivo)))
     }
-
-  },NULL))
-
+ resposta$content
+  })
 
 }

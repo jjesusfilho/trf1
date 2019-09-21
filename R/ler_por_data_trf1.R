@@ -27,7 +27,7 @@ ler_por_data_trf1 <- function(arquivos = NULL, diretorio = "."){
   xml2::xml_find_all("//a[@title='Acompanhamento Processual']") %>%
   xml2::xml_attr("href")
 
- processo<-stringr::str_extract(detalhes,"\\d+$") %>%
+ processo<-stringr::str_extract(url_detalhes,"\\d+$") %>%
    stringr::str_pad(20,side='left',pad="0")
 
  url_inteiro_teor <-  html %>%

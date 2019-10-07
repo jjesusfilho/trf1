@@ -16,7 +16,7 @@ baixar_detalhes_trf1 <- function(df = NULL,diretorio = "."){
 
    arquivo <- paste0("_detalhes_processo_", .y, ".html")
 
- httr::RETRY("GET",url=url1,httr::write_disk(file.path(diretorio, Sys.time() %>%
+ httr::RETRY("GET",url=.x,httr::write_disk(file.path(diretorio, Sys.time() %>%
   stringr::str_replace_all("\\D+", "_") %>%
   stringr::str_replace("$", arquivo))))
 

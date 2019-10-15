@@ -83,10 +83,27 @@
 <div id="utilizacao" class="section level2">
 <h2 class="hasAnchor">
 <a href="#utilizacao" class="anchor"></a>Utilização</h2>
-<p>Para baixar acórdãos do TRF1, use a seguinte função:</p>
+<p>Para baixar acórdãos do TRF1 com busca livre, use a seguinte função:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="reference/baixar_cjsg_trf1.html">baixar_cjsg_trf1</a></span>(<span class="dt">livre =</span> <span class="st">"agência nacional de vigilância sanitária"</span>, <span class="dt">data_inicial =</span> <span class="st">"01/07/2019"</span>, <span class="dt">data_final =</span> <span class="st">"31/07/2019"</span>)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">df &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_cjsg_trf1.html">ler_cjsg_trf1</a></span>()</a></code></pre></div>
+<p>Para baixar processos julgados numa data específica, utilize as funções abaixo.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/files2">dir.create</a></span>(<span class="st">"trf1"</span>)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="reference/baixar_por_data_trf1.html">baixar_por_data_trf1</a></span>(<span class="dt">data =</span> <span class="st">"15/10/2019"</span>, <span class="dt">diretorio =</span> <span class="st">"trf1"</span>)</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">df  &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_por_data_trf1.html">ler_por_data_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1"</span>)</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/files2">dir.create</a></span>(<span class="st">"trf1/detalhes"</span>)</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="kw"><a href="reference/baixar_detalhes_trf1.html">baixar_detalhes_trf1</a></span>(df, <span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">detalhes &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_detalhes_trf1.html">ler_detalhes_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">partes &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_partes_trf1.html">ler_partes_trf1</a></span>(<span class="dt">diretorio =</span>  <span class="st">"trf1/detalhes"</span>)</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">movimentacao &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_movimentacao_trf1.html">ler_movimentacao_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a></code></pre></div>
 <p>Please note that the ‘trf1’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>

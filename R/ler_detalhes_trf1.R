@@ -18,8 +18,8 @@ ler_detalhes_trf1 <- function(arquivos = NULL, diretorio = "."){
 
   }
 
-  processos <- stringr::str_extract(arquivos,"\\d{7,}")
-  purrr::map2_dfr(arquivos,processos, purrr::possibly(~{
+  purrr::map_dfr(arquivos, purrr::possibly(~{
+    processo <- stringr::str_extract(.x,"\\d{7,}")
 
     x <- xml2::read_html(.x)
 
@@ -29,8 +29,12 @@ ler_detalhes_trf1 <- function(arquivos = NULL, diretorio = "."){
       `[[`(1) %>%
       tidyr::pivot_wider(names_from = "X1",values_from = "X2") %>%
       janitor::clean_names() %>%
-      tibble::add_column(processo=.y,.before =1)
+      tibble::add_column(proc=processo,.before =1) %>%
+      tidyr::separate(processo_originario,c("processo_origem","origem"),sep="/") %>%
+      dplyr::mutate(data_de_autuacao=lubridate::dmy(data_de_autuacao)) %>%
+      tidyr::separate(grupo,c("codigo_classe","classe"),sep=" - ") %>%
+      tidyr::separate(assunto,c("codigo_assunto","assunto"),sep=" - ")
+
 
   }, NULL))
-
 }

@@ -28,7 +28,7 @@ baixar_detalhes_trf1 <- function(df = NULL,diretorio = "."){
 #    httr::GET()
 
 
-  trf1:::baixar_partes_trf1(processos = .y,diretorio=diretorio)
+  baixar_partes_trf1(processos = .y,diretorio=diretorio)
   },NULL))
 
 }

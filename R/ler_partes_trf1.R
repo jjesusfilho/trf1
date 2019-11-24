@@ -19,7 +19,7 @@ ler_partes_trf1 <- function(arquivos = NULL, diretorio = "."){
   }
 
 
-  purrr::map_dfr(arquivos,purrr::possibly(~{
+  purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
 
     processo <- stringr::str_extract(.x,"\\d{10,}")
 
@@ -27,8 +27,9 @@ ler_partes_trf1 <- function(arquivos = NULL, diretorio = "."){
       rvest::html_table() %>%
       `[[`(1) %>%
       `[`(,c(1,4)) %>%
-      setNames(c("parte","parte_nome"))
+      setNames(c("parte","parte_nome")) %>%
+      tibble::add_column(processo=processo)
 
-  },NULL))
+  }),NULL))
 
 }

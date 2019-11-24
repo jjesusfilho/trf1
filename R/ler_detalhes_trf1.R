@@ -18,7 +18,7 @@ ler_detalhes_trf1 <- function(arquivos = NULL, diretorio = "."){
 
   }
 
-  purrr::map_dfr(arquivos, purrr::possibly(~{
+  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
     processo <- stringr::str_extract(.x,"\\d{7,}")
 
     x <- xml2::read_html(.x)
@@ -36,5 +36,5 @@ ler_detalhes_trf1 <- function(arquivos = NULL, diretorio = "."){
       tidyr::separate(assunto,c("codigo_assunto","assunto"),sep=" - ")
 
 
-  }, NULL))
+  }), NULL))
 }

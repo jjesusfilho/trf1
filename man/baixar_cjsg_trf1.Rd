@@ -4,8 +4,14 @@
 \alias{baixar_cjsg_trf1}
 \title{Baixa decisões de segunda instância do TRF1}
 \usage{
-baixar_cjsg_trf1(livre = "", aspas = FALSE, tipo = "ACORDAO",
-  data_inicial = "", data_final = "", diretorio = ".")
+baixar_cjsg_trf1(
+  livre = "",
+  aspas = FALSE,
+  tipo = "ACORDAO",
+  data_inicial = "",
+  data_final = "",
+  diretorio = "."
+)
 }
 \arguments{
 \item{livre}{busca livre}

@@ -19,7 +19,7 @@ ler_por_data_trf1 <- function(arquivos = NULL, diretorio = "."){
 
   }
 
- purrr::map_dfr(arquivos,purrr::possibly(~{
+ purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
 
   html <- xml2::read_html(.x)
 
@@ -40,5 +40,5 @@ ler_por_data_trf1 <- function(arquivos = NULL, diretorio = "."){
 
  tibble::tibble(data_julgamento,processo,url_detalhes,url_inteiro_teor)
 
- },NULL))
+ }),NULL))
 }

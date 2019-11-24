@@ -12,7 +12,7 @@
 ler_cjsg_trf1 <- function(diretorio = ".") {
   arquivos <- list.files(path = diretorio, pattern = ".html", full.names = TRUE)
 
-  purrr::map_dfr(arquivos, ~ {
+  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
 
     doc <- xml2::read_html(.x)
 
@@ -30,5 +30,5 @@ ler_cjsg_trf1 <- function(diretorio = ".") {
       dplyr::ungroup() %>%
       tidyr::spread(key = variavel, value = valor) %>%
       dplyr::select(-row_id)
-  })
+  }),NULL))
 }

@@ -18,7 +18,7 @@ ler_movimentacao_trf1 <- function(arquivos = NULL, diretorio = "."){
 
   }
 
-  purrr::map_dfr(arquivos, purrr::possibly(~{
+  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
 
     processo <- stringr::str_extract(.x,"\\d{7,}")
 
@@ -30,6 +30,6 @@ ler_movimentacao_trf1 <- function(arquivos = NULL, diretorio = "."){
       tibble::add_column(processo=processo,.before =1) %>%
       dplyr::mutate(data= lubridate::parse_date_time(data,"dmy HMS"))
 
-  }, NULL))
+  }), NULL))
 
 }

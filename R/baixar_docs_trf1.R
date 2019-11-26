@@ -31,7 +31,7 @@ baixar_docs_trf1 <- function(df = NULL,diretorio = ".", tudo = FALSE){
 
     httr::RETRY("GET",url=x,httr::write_disk(file.path(diretorio, y %>%
                                                           stringr::str_replace_all("\\D+", "_") %>%
-                                                          stringr::str_replace("$", arquivo))))
+                                                          stringr::str_replace("$", arquivo)),overwrite=TRUE))
 
   })
 

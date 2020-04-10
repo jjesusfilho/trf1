@@ -6,19 +6,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Baixa e Organiza Dados do TRF1 • trf1</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Baixa e Organiza Dados do TRF1">
 <meta property="og:description" content="Baixa e Organiza Dados do TRF1.">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -49,7 +49,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/jjesusfilho/trf1">
+  <a href="https://github.com/jjesusfilho/trf1/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -71,47 +71,47 @@
 <a href="#trf1" class="anchor"></a>trf1</h1></div>
 <!-- badges: start -->
 
-<p>O objetivo deste pacote é de prover funções para baixar e organizar decisões de primeira e de segunda instância do Tribunal Regional Federal da Primeira Região</p>
+<p>O objetivo deste pacote Ã© de prover funÃ§Ãµes para baixar e organizar decisÃµes de primeira e de segunda instÃ¢ncia do Tribunal Regional Federal da Primeira RegiÃ£o</p>
 <div id="instalacao" class="section level2">
 <h2 class="hasAnchor">
-<a href="#instalacao" class="anchor"></a>Instalação</h2>
-<p>Instale a versão em desenvolvimento:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">install_.packages_github</span>(<span class="st">"jjesusfilho/trf1"</span>)</a></code></pre></div>
+<a href="#instalacao" class="anchor"></a>InstalaÃ§Ã£o</h2>
+<p>Instale a versÃ£o em desenvolvimento:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_.packages_github</span>(<span class="st">"jjesusfilho/trf1"</span>)</pre></div>
 </div>
 <div id="utilizacao" class="section level2">
 <h2 class="hasAnchor">
-<a href="#utilizacao" class="anchor"></a>Utilização</h2>
-<p>Para baixar acórdãos do TRF1 com busca livre, use a seguinte função:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="reference/baixar_cjsg_trf1.html">baixar_cjsg_trf1</a></span>(<span class="dt">livre =</span> <span class="st">"agência nacional de vigilância sanitária"</span>, <span class="dt">data_inicial =</span> <span class="st">"01/07/2019"</span>, <span class="dt">data_final =</span> <span class="st">"31/07/2019"</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">df &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_cjsg_trf1.html">ler_cjsg_trf1</a></span>()</a></code></pre></div>
-<p>Para baixar processos julgados numa data específica, utilize as funções abaixo.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1"</span>)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="reference/baixar_por_data_trf1.html">baixar_por_data_trf1</a></span>(<span class="dt">data =</span> <span class="st">"15/10/2019"</span>, <span class="dt">diretorio =</span> <span class="st">"trf1"</span>)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">df  &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_por_data_trf1.html">ler_por_data_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1"</span>)</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="kw"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1/detalhes"</span>)</a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="kw"><a href="reference/baixar_detalhes_trf1.html">baixar_detalhes_trf1</a></span>(df, <span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12">detalhes &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_detalhes_trf1.html">ler_detalhes_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a>
-<a class="sourceLine" id="cb3-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14">partes &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_partes_trf1.html">ler_partes_trf1</a></span>(<span class="dt">diretorio =</span>  <span class="st">"trf1/detalhes"</span>)</a>
-<a class="sourceLine" id="cb3-15" data-line-number="15"></a>
-<a class="sourceLine" id="cb3-16" data-line-number="16">movimentacao &lt;-<span class="st"> </span><span class="kw"><a href="reference/ler_movimentacao_trf1.html">ler_movimentacao_trf1</a></span>(<span class="dt">diretorio =</span> <span class="st">"trf1/detalhes"</span>)</a></code></pre></div>
-<p>Please note that the ‘trf1’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<a href="#utilizacao" class="anchor"></a>UtilizaÃ§Ã£o</h2>
+<p>Para baixar acÃ³rdÃ£os do TRF1 com busca livre, use a seguinte funÃ§Ã£o:</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="reference/baixar_cjsg_trf1.html">baixar_cjsg_trf1</a></span>(<span class="kw">livre</span> <span class="kw">=</span> <span class="st">"agÃªncia nacional de vigilÃ¢ncia sanitÃ¡ria"</span>, <span class="kw">data_inicial</span> <span class="kw">=</span> <span class="st">"01/07/2019"</span>, <span class="kw">data_final</span> <span class="kw">=</span> <span class="st">"31/07/2019"</span>)
+
+<span class="no">df</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/ler_cjsg_trf1.html">ler_cjsg_trf1</a></span>()</pre></div>
+<p>Para baixar processos julgados numa data especÃ­fica, utilize as funÃ§Ãµes abaixo.</p>
+<div class="sourceCode" id="cb3"><pre class="r">
+<span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1"</span>)
+
+<span class="fu"><a href="reference/baixar_por_data_trf1.html">baixar_por_data_trf1</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="st">"15/10/2019"</span>, <span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1"</span>)
+
+<span class="no">df</span>  <span class="kw">&lt;-</span> <span class="fu"><a href="reference/ler_por_data_trf1.html">ler_por_data_trf1</a></span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1"</span>)
+
+<span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1/detalhes"</span>)
+
+<span class="fu"><a href="reference/baixar_detalhes_trf1.html">baixar_detalhes_trf1</a></span>(<span class="no">df</span>, <span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)
+
+<span class="no">detalhes</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/ler_detalhes_trf1.html">ler_detalhes_trf1</a></span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)
+
+<span class="no">partes</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/ler_partes_trf1.html">ler_partes_trf1</a></span>(<span class="kw">diretorio</span> <span class="kw">=</span>  <span class="st">"trf1/detalhes"</span>)
+
+<span class="no">movimentacao</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/ler_movimentacao_trf1.html">ler_movimentacao_trf1</a></span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)</pre></div>
+<p>Please note that the âtrf1â project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/jjesusfilho/trf1">https://​github.com/​jjesusfilho/​trf1</a>
+<li>Browse source code at <br><a href="https://github.com/jjesusfilho/trf1/">https://​github.com/​jjesusfilho/​trf1/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/jjesusfilho/trf1/issues">https://​github.com/​jjesusfilho/​trf1/​issues</a>
 </li>
@@ -134,7 +134,7 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Jose de Jesus Filho <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/https://orcid.org/0000-0001-7415-7383" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Jose de Jesus Filho <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/https://orcid.org/0000-0001-7415-7383" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -154,7 +154,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
 </div>
 
       </footer>

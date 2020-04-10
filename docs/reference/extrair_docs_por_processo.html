@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ler movimentacao baixada com baixar_url_detalhes_trf1 — ler_movimentacao_trf1 • trf1</title>
+<title>Extrai tabela urls dos documentos com base no número do processo — extrair_docs_por_processo • trf1</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="ler movimentacao baixada com baixar_url_detalhes_trf1 — ler_movimentacao_trf1" />
-<meta property="og:description" content="ler movimentacao baixada com baixar_url_detalhes_trf1" />
+<meta property="og:title" content="Extrai tabela urls dos documentos com base no número do processo — extrair_docs_por_processo" />
+<meta property="og:description" content="Extrai tabela urls dos documentos com base no número do processo" />
 
 
 
@@ -108,38 +108,30 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>ler movimentacao baixada com baixar_url_detalhes_trf1</h1>
-    <small class="dont-index">Source: <a href='https://github.com/jjesusfilho/trf1/blob/master/R/ler_movimentacao_trf1.R'><code>R/ler_movimentacao_trf1.R</code></a></small>
-    <div class="hidden name"><code>ler_movimentacao_trf1.Rd</code></div>
+    <h1>Extrai tabela urls dos documentos com base no número do processo</h1>
+    <small class="dont-index">Source: <a href='https://github.com/jjesusfilho/trf1/blob/master/R/extrair_docs_por_processo.R'><code>R/extrair_docs_por_processo.R</code></a></small>
+    <div class="hidden name"><code>extrair_docs_por_processo.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>ler movimentacao baixada com baixar_url_detalhes_trf1</p>
+    <p>Extrai tabela urls dos documentos com base no número do processo</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ler_movimentacao_trf1</span>(<span class='kw'>arquivos</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>diretorio</span> <span class='kw'>=</span> <span class='st'>"."</span>)</pre>
+    <pre class="usage"><span class='fu'>extrair_docs_por_processo</span>(<span class='kw'>processos</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>arquivos</th>
-      <td><p>vetor caminhos para arquivos</p></td>
-    </tr>
-    <tr>
-      <th>diretorio</th>
-      <td><p>se arquivos for NULL, informar diretorio</p></td>
+      <th>processos</th>
+      <td><p>vetor com números dos processos</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>tibble</p>
+    <p>tibble com processo,documento, data,url_documento e extensão</p>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='no'>df</span> <span class='kw'>&lt;-</span> <span class='fu'>ler_movimentacao_trf1</span>()
-}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

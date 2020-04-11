@@ -11,7 +11,7 @@ extrair_docs_por_processo <- function(processos = NULL){
   purrr::map_dfr(processos,purrr::possibly(purrrogress::with_progress(~{
 
     processo <- stringr::str_remove_all(.x,"\\D")
-    p <- str_remove(processo,"^0+")
+    p <- stringr::str_remove(processo,"^0+")
 
     url <- paste0("https://arquivo.trf1.jus.br/PesquisaMenuArquivo.asp?p1=",processo,"&pA=&pN=",p)
 

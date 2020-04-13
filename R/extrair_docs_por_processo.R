@@ -21,7 +21,7 @@ extrair_docs_por_processo <- function(processos = NULL){
     url_documento <- xml2::xml_find_all(conteudo,"//table[@id='docs-tb']//td[1]/a") %>%
       xml2::xml_attr("href")
 
-    extensao <- stringr::str_extract(url_documento,"\\..{3}$")
+    extensao <- stringr::str_extract(url_documento,"\\.\\w+$")
 
     data  <- xml2::xml_find_all(conteudo,"//table[@id='docs-tb']//td[2]") %>%
       xml2::xml_text()

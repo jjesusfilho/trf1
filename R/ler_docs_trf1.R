@@ -16,10 +16,15 @@ ler_docs_trf1 <- function (arquivos = NULL, diretorio = ".")
   if (is.null(arquivos)) {
     arquivos <- list.files(diretorio, full.names = TRUE)
   }
+
+  ## Muitos processos não têm o número do cnj. Por isso de 10 a 20.
   purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
     processo <- stringr::str_extract(.x, "\\d{10,20}")
-    data <- stringr::str_extract(.x,"\\d{2}_\\d{2}_\\d{4}") %>%
-      lubridate::dmy()
+
+    ## O acréscimo de uma barra ao início e um subscrito ao final foi mais por segurança
+    data <- stringr::str_extract(.x, "/\\d{4}_\\d{2}_\\d{2}_") %>%
+      lubridate::ymd()
+
     documento <- stringr::str_extract(.x, "(?<=_)\\p{L}.+?(?=_\\d{10,20})") %>%
       stringi::stri_trans_general("latin-ascii")
 

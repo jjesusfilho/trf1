@@ -17,10 +17,10 @@ ler_docs_trf1 <- function (arquivos = NULL, diretorio = ".")
     arquivos <- list.files(diretorio, full.names = TRUE)
   }
   purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
-    processo <- stringr::str_extract(.x, "\\d{20}")
+    processo <- stringr::str_extract(.x, "\\d{10,20}")
     data <- stringr::str_extract(.x,"\\d{2}_\\d{2}_\\d{4}") %>%
       lubridate::dmy()
-    documento <- stringr::str_extract(.x, "(?<=_)\\p{L}.+?(?=_\\d{20})") %>%
+    documento <- stringr::str_extract(.x, "(?<=_)\\p{L}.+?(?=_\\d{10,20})") %>%
       stringi::stri_trans_general("latin-ascii")
 
     julgado <- textreadr::read_document(.x,combine = TRUE)
@@ -44,7 +44,8 @@ ler_docs_trf1 <- function (arquivos = NULL, diretorio = ".")
     s <- purrr::map(df$julgado, ~stringr::str_c(.x, collapse = "\n")) %>%
       unlist()
 
-    df %>% dplyr::mutate(julgado = !!s)
+    df %>% dplyr::mutate(julgado = !!s) %>%
+      dplyr::ungroup()
 
 
   }), NULL))

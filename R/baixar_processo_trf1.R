@@ -10,7 +10,7 @@
 #' \dontrun{
 #' baixar_processo_trf1(x="00010419820184013300",diretorio = ".")
 #' }
-baixar_processo_trf1<- function(x,diretorio = "."){
+baixar_processo_trf1<- function(x, diretorio = "."){
 
 
 x <- x %>% stringr::str_remove_all("\\D+")
@@ -26,7 +26,7 @@ res<-purrr::map2(x,codigo,~{
 
   url <- "https://processual.trf1.jus.br/consultaProcessual/processo.php"
 
-  sigla <- codigo_trf1 %>%
+  sigla <- trf1::trf1_codigo %>%
            dplyr::filter(codigo == .y) %>%
            dplyr::pull("sigla")
 

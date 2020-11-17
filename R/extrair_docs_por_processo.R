@@ -8,7 +8,11 @@
 extrair_docs_por_processo <- function(processos = NULL){
 
 
-  purrr::map_dfr(processos,purrr::possibly(purrrogress::with_progress(~{
+  pb <- progress::progress_bar$new(total = length(processos))
+
+  purrr::map_dfr(processos,purrr::possibly(~{
+
+    pb$tick()
 
     processo <- stringr::str_remove_all(.x,"\\D")
     p <- stringr::str_remove(processo,"^0+")
@@ -30,5 +34,5 @@ extrair_docs_por_processo <- function(processos = NULL){
 
     tibble::tibble(processo,documento, data, url_documento,extensao)
 
-  }),NULL))
+  },NULL))
 }

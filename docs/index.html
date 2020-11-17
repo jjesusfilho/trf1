@@ -72,36 +72,42 @@
 <!-- badges: start -->
 
 <p>O objetivo deste pacote é de prover funções para baixar e organizar decisões de primeira e de segunda instância do Tribunal Regional Federal da Primeira Região</p>
-<div id="instalacao" class="section level2">
+<div id="instalação" class="section level2">
 <h2 class="hasAnchor">
-<a href="#instalacao" class="anchor"></a>Instalação</h2>
+<a href="#instala%C3%A7%C3%A3o" class="anchor"></a>Instalação</h2>
 <p>Instale a versão em desenvolvimento:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_.packages_github</span>(<span class="st">"jjesusfilho/trf1"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="kw">devtools</span>::<span class="fu">install_.packages_github</span>(<span class="st">"jjesusfilho/trf1"</span>)
+</pre></div>
 </div>
-<div id="utilizacao" class="section level2">
+<div id="utilização" class="section level2">
 <h2 class="hasAnchor">
-<a href="#utilizacao" class="anchor"></a>Utilização</h2>
+<a href="#utiliza%C3%A7%C3%A3o" class="anchor"></a>Utilização</h2>
 <p>Para baixar acórdãos do TRF1 com busca livre, use a seguinte função:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu">baixar_cjsg_trf1</span>(<span class="kw">livre</span> <span class="kw">=</span> <span class="st">"agência nacional de vigilância sanitária"</span>, <span class="kw">data_inicial</span> <span class="kw">=</span> <span class="st">"01/07/2019"</span>, <span class="kw">data_final</span> <span class="kw">=</span> <span class="st">"31/07/2019"</span>)
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="fu"><a href="reference/baixar_cjsg_trf1.html">baixar_cjsg_trf1</a></span>(livre = <span class="st">"agência nacional de vigilância sanitária"</span>, data_inicial = <span class="st">"01/07/2019"</span>, data_final = <span class="st">"31/07/2019"</span>)
 
-<span class="no">df</span> <span class="kw">&lt;-</span> <span class="fu">ler_cjsg_trf1</span>()</pre></div>
+<span class="kw">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ler_cjsg_trf1.html">ler_cjsg_trf1</a></span>()
+</pre></div>
 <p>Para baixar processos julgados numa data específica, utilize as funções abaixo.</p>
-<div class="sourceCode" id="cb3"><pre class="r">
+<div class="sourceCode" id="cb3"><pre class="downlit">
+
 <span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1"</span>)
 
-<span class="fu">baixar_por_data_trf1</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="st">"15/10/2019"</span>, <span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1"</span>)
+<span class="fu"><a href="reference/baixar_por_data_trf1.html">baixar_por_data_trf1</a></span>(data = <span class="st">"15/10/2019"</span>, diretorio = <span class="st">"trf1"</span>)
 
-<span class="no">df</span>  <span class="kw">&lt;-</span> <span class="fu">ler_por_data_trf1</span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1"</span>)
+<span class="kw">df</span>  <span class="op">&lt;-</span> <span class="fu"><a href="reference/ler_por_data_trf1.html">ler_por_data_trf1</a></span>(diretorio = <span class="st">"trf1"</span>)
 
 <span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span>(<span class="st">"trf1/detalhes"</span>)
 
-<span class="fu">baixar_detalhes_trf1</span>(<span class="no">df</span>, <span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)
+<span class="fu"><a href="reference/baixar_detalhes_trf1.html">baixar_detalhes_trf1</a></span>(<span class="kw">df</span>, diretorio = <span class="st">"trf1/detalhes"</span>)
 
-<span class="no">detalhes</span> <span class="kw">&lt;-</span> <span class="fu">ler_detalhes_trf1</span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)
+<span class="kw">detalhes</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ler_detalhes_trf1.html">ler_detalhes_trf1</a></span>(diretorio = <span class="st">"trf1/detalhes"</span>)
 
-<span class="no">partes</span> <span class="kw">&lt;-</span> <span class="fu">ler_partes_trf1</span>(<span class="kw">diretorio</span> <span class="kw">=</span>  <span class="st">"trf1/detalhes"</span>)
+<span class="kw">partes</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ler_partes_trf1.html">ler_partes_trf1</a></span>(diretorio =  <span class="st">"trf1/detalhes"</span>)
 
-<span class="no">movimentacao</span> <span class="kw">&lt;-</span> <span class="fu">ler_movimentacao_trf1</span>(<span class="kw">diretorio</span> <span class="kw">=</span> <span class="st">"trf1/detalhes"</span>)</pre></div>
+<span class="kw">movimentacao</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ler_movimentacao_trf1.html">ler_movimentacao_trf1</a></span>(diretorio = <span class="st">"trf1/detalhes"</span>)
+</pre></div>
 <p>Please note that the ‘trf1’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
@@ -154,7 +160,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

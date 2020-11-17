@@ -1,6 +1,7 @@
 #' Ler htmls baixados por baixar_cjsg_trf1
 #'
-#' @param diretorio Default para o atual
+#' @param arquivos Vetor de arquivos
+#' @param diretorio Informar se não informar arquivos.
 #'
 #' @return tibble com informações processuais
 #' @export
@@ -9,10 +10,19 @@
 #' \dontrun{
 #' ler_cjsg_trf1(diretorio = ".")
 #' }
-ler_cjsg_trf1 <- function(diretorio = ".") {
+ler_cjsg_trf1 <- function(arquivos = NULL, diretorio = ".") {
+
+  if (is.null(arquivos)){
+
   arquivos <- list.files(path = diretorio, pattern = ".html", full.names = TRUE)
 
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
+  }
+
+  pb <- progress::progress_bar$new(total = length(arquivos))
+
+  purrr::map_dfr(arquivos, purrr::possibly(~{
+
+    pb$tick()
 
     doc <- xml2::read_html(.x)
 
@@ -30,5 +40,5 @@ ler_cjsg_trf1 <- function(diretorio = ".") {
       dplyr::ungroup() %>%
       tidyr::spread(key = variavel, value = valor) %>%
       dplyr::select(-row_id)
-  }),NULL))
+  },NULL))
 }

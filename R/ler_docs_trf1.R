@@ -18,7 +18,13 @@ ler_docs_trf1 <- function (arquivos = NULL, diretorio = ".")
   }
 
   ## Muitos processos não têm o número do cnj. Por isso de 10 a 20.
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
+
+  pb <- progress::progress_bar$new(total = length(arquivos))
+
+  purrr::map_dfr(arquivos, purrr::possibly(~{
+
+    pb$tick()
+
     processo <- stringr::str_extract(.x, "\\d{10,20}")
 
     ## O acréscimo de uma barra ao início e um subscrito ao final foi mais por segurança
@@ -53,5 +59,5 @@ ler_docs_trf1 <- function (arquivos = NULL, diretorio = ".")
       dplyr::ungroup()
 
 
-  }), NULL))
+  }, NULL))
 }

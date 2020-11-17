@@ -9,12 +9,15 @@
 #'
 trf1_baixar_cpopg <- function(processo = NULL, secao = NULL, diretorio = "."){
 
-  
+
 url <- "https://processual.trf1.jus.br/consultaProcessual/processo.php"
 
 
-purrr::walk2(processo, secao, purrr::possibly(purrrogress::with_progress(~{
-  
+pb <- progress::progress_bar$new(total = length(processo))
+
+purrr::walk2(processo, secao, purrr::possibly(~{
+
+  pb$tick()
 .x <- stringr::str_remove_all(.x,"\\D+")
 
 query <- list(
@@ -31,6 +34,6 @@ arquivo <- file.path(diretorio, paste0("trf1_cpopg_",
 httr::RETRY("GET",url,query = query,httr::write_disk(arquivo,overwrite = TRUE))
 
 
-}),NULL))
+},NULL))
 
 }

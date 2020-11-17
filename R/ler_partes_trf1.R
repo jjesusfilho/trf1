@@ -19,7 +19,11 @@ ler_partes_trf1 <- function(arquivos = NULL, diretorio = "."){
   }
 
 
-  purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
+  pb <- progress::progress_bar$new(total = length(arquivos))
+
+  purrr::map_dfr(arquivos,purrr::possibly(~{
+
+    pb$tick()
 
     processo <- stringr::str_extract(.x,"\\d{10,}")
 
@@ -30,6 +34,6 @@ ler_partes_trf1 <- function(arquivos = NULL, diretorio = "."){
       setNames(c("parte","parte_nome")) %>%
       tibble::add_column(processo=processo)
 
-  }),NULL))
+  },NULL))
 
 }

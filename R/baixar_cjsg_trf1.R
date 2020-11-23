@@ -18,7 +18,7 @@
 #' )
 #' }
 #'
-baixar_cjsg_trf1 <- function(livre = "", aspas = FALSE, tipo = "ACORDAO", data_inicial = "", data_final = "", diretorio = ".") {
+baixar_cjsg_trf1 <- function(livre = "", aspas = FALSE, tipo = "ACORDAO", data_inicial = "", data_final = "",  diretorio = ".") {
 
   if (aspas == TRUE){
 

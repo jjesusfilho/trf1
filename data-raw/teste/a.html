@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:pe="http://primefaces.org/ui/extensions"><head id="j_idt2">
+ 
+	<meta http-equiv="Content-Type" content="text/html; UTF-8" /><link type="text/css" rel="stylesheet" href="/jurisprudencia/javax.faces.resource/theme.css.xhtml?ln=primefaces-aristo" /><link type="text/css" rel="stylesheet" href="/jurisprudencia/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.2" /><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/printer/printer.js.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='pt_BR';}</script>
+	<title>Jurisprudência</title>
+	<link rel="icon" href="/jurisprudencia/imagens/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/jurisprudencia/imagens/favicon.ico" type="image/x-icon" />
+	  
+	<script language="javascript" type="text/javascript" src="/jurisprudencia/js/internet.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
+
+	<script language="javascript" type="text/javascript" src="/jurisprudencia/js/scripts-trf1.js" charset="UTF-8"></script><script type="text/javascript" src="/jurisprudencia/javax.faces.resource/locale-primefaces.js.xhtml?ln=js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/jurisprudencia/css/internet.css" /></head><body><script id="j_idt8_s" type="text/javascript">PrimeFaces.cw("Tooltip","widget_j_idt8",{id:"j_idt8",showEffect:"fade",hideEffect:"fade"});</script>
+
+
+
+	<div id="topo">
+		<div id="portal_header">
+			<div id="app-name">Jurisprudência</div>
+			 <div id="logo">
+				<a href="http://www.cjf.jus.br"><img src="/jurisprudencia/imagens/logo-cjf.png" /> 
+					</a>
+			</div> 
+		
+			<div id="migalha">
+				<p>Brasília, 20 de novembro de 2020</p> 
+			</div>
+			<div id="ajuda">
+			<a href="javascript:abrePopup('ajuda','/jurisprudencia/ajuda.xhtml')">Ajuda</a> | <a href="mailto:jurisprudenciaunificada@cjf.jus.br">Fale conosco</a>
+			</div>
+		</div>
+	</div>
+<form id="j_idt10" name="j_idt10" method="post" action="/jurisprudencia/trf1/index.xhtml" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt10" value="j_idt10" />
+<div id="j_idt10:messages" class="ui-messages ui-widget" aria-live="polite"><div class="ui-messages-info ui-corner-all"><a href="#" class="ui-messages-close" onclick="$(this).parent().slideUp();return false;"><span class="ui-icon ui-icon-close"></span></a><span class="ui-messages-info-icon"></span><ul><li role="alert" aria-atomic="true"><span class="ui-messages-info-summary"></span><span class="ui-messages-info-detail">Verifique o Captcha</span></li></ul></div></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="1044284381881435689:-3672447751376957013" autocomplete="off" />
+</form>
+	<script type="text/javascript">
+		function hideMessages() {
+			$(".ui-messages-close").parent().slideUp();
+		}
+		$(document).ready(function() {
+			setTimeout(hideMessages, 5000);
+		});
+		jQuery(document).ready(function() {
+		    var offset = 220;
+		    var duration = 500;
+		    jQuery(window).scroll(function() {
+		        if (jQuery(this).scrollTop() > offset) {
+		            jQuery('.back-to-top').fadeIn(duration);
+		        } else {
+		            jQuery('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    
+		    jQuery('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        jQuery('html, body').animate({scrollTop: 0}, duration);
+		        return false;
+		    })
+		});
+	</script>
+
+	<div id="tools">
+		<div id="topo_conteudo">
+			<div id="left"></div>
+	
+		</div>
+	</div>
+
+	<div id="content">
+<form id="formulario" name="formulario" method="post" action="/jurisprudencia/trf1/index.xhtml" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formulario" value="formulario" />
+
+
+			
+			<div id="conteudo">
+
+				<h1>Jurisprudência TRF1</h1><div id="formulario:pesquisa" class="ui-outputpanel ui-widget">
+
+		<div id="pesquisaLivre">
+			<h2>
+				Pesquisa livre <img alt=" " title="É recomendada para busca por palavras/expressões em qualquer lugar do documento de jurisprudência. Exemplo: carreira e &quot;ministério público&quot; (as expressões devem ser colocadas entre aspas)." onMouseOver="return escape(this.title);" onfocus=" " src="/jurisprudencia/imagens/question.png" class="img_tooltip" />
+
+			</h2>
+
+			<table summary="Dados para pesquisa livre" cellpadding="0" cellspacing="1">
+					<tr>
+						<td colspan="2"><input id="formulario:textoLivre" name="formulario:textoLivre" type="text" value="indigena" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:textoLivre_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_textoLivre",{id:"formulario:textoLivre"});</script>
+
+							<div style="float: left; margin-left: 17px;"></div> 
+							
+							<label for="lista_resumida">Mostrar informação resumida</label><div id="formulario:lista_resumida" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:lista_resumida_input" name="formulario:lista_resumida_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" onchange="PrimeFaces.ab({s:&quot;formulario:lista_resumida&quot;,e:&quot;change&quot;,p:&quot;formulario:lista_resumida&quot;,u:&quot;formulario:resultado&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="formulario:lista_resumida_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_formulario_lista_resumida",{id:"formulario:lista_resumida"});</script>
+							<div style="float: left; margin-left: 17px;"></div> <label for="ckbAvancada">Pesquisa avançada</label><div id="formulario:ckbAvancada" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:ckbAvancada_input" name="formulario:ckbAvancada_input" type="checkbox" autocomplete="off" aria-hidden="true" checked="checked" aria-checked="true" onchange="PrimeFaces.ab({s:&quot;formulario:ckbAvancada&quot;,e:&quot;change&quot;,p:&quot;formulario:ckbAvancada&quot;,u:&quot;formulario:pesquisaAvancada&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active"><span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div></div><script id="formulario:ckbAvancada_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_formulario_ckbAvancada",{id:"formulario:ckbAvancada"});</script></td>
+					</tr>
+		
+			</table>
+			<div id="wizard">
+				<input type="button" onclick="adicionaOperador2(' e ')" onkeypress=" " value="e" /> <input type="button" onclick="adicionaOperador2(' ou ')" onkeypress=" " value="ou" /> <input type="button" onclick="adicionaOperador2(' adj ')" onkeypress=" " value="adj" /> <input type="button" onclick="adicionaOperador2(' nao ')" onkeypress=" " value="não" />
+				<input type="button" onclick="adicionaOperador2(' prox ')" onkeypress=" " value="prox" /> <input type="button" onclick="adicionaOperador2(' mesmo ')" onkeypress=" " value="mesmo" />
+				<input type="button" onclick="adicionaOperador2(' com ')" onkeypress=" " value="com" /> <input type="button" onclick="adicionaOperador2('$')" onkeypress=" " value="$" />
+			</div>
+		</div><div id="formulario:pesquisaAvancada" class="ui-outputpanel ui-widget"><div id="formulario:j_idt17" class="ui-outputpanel ui-widget">
+
+				<h2>
+					Pesquisa por campos específicos <img alt=" " onfocus=" " title="Permite ao usuário digitar um ou mais campos específicos disponíveis, ou mesmo conjulgá-los com a pesquisa livre, restringindo o resultado da busca de acordo com o seu interesse de recuperação." onMouseOver="return escape(this.title);" src="/jurisprudencia/imagens/question.png" class="img_tooltip" />
+				</h2>
+				<table summary="Dados para pesquisa específica" cellpadding="0" cellspacing="1">
+			
+						<tr>
+							<td class="label td_right" width="177px"><label for="proc">Número</label></td>
+							<td><input id="formulario:j_idt19" name="formulario:j_idt19" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt19_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt19",{id:"formulario:j_idt19"});</script></td>
+						</tr>
+						<tr>
+							<td class="label td_right"><label for="combo_classes">Classe</label>
+							</td>
+
+							<td><input id="formulario:j_idt21" name="formulario:j_idt21" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt21_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt21",{id:"formulario:j_idt21"});</script>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="label td_right"><label for="rel">Relator</label>
+							</td>
+							<td><input id="formulario:j_idt23" name="formulario:j_idt23" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt23_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt23",{id:"formulario:j_idt23"});</script></td>
+						</tr>
+						<tr>
+							<td class="label td_right"><label for="rev">Revisor</label>
+							</td>
+							<td><input id="formulario:j_idt25" name="formulario:j_idt25" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt25_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt25",{id:"formulario:j_idt25"});</script></td>
+						</tr>
+						<tr>
+							<td class="label td_right"><label for="relc">Relator
+									Convocado</label></td>
+							<td><input id="formulario:j_idt27" name="formulario:j_idt27" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt27_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt27",{id:"formulario:j_idt27"});</script></td>
+						</tr>
+						<tr>
+							<td class="label td_right"><label for="rela">Relator
+									para Acórdão</label></td>
+							<td><input id="formulario:j_idt29" name="formulario:j_idt29" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt29_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt29",{id:"formulario:j_idt29"});</script></td>
+						</tr>
+
+						<tr>
+							<td class="label td_right"><label for="combo_orgaos">Órgão
+									Julgador</label></td>
+							<td><input id="formulario:j_idt31" name="formulario:j_idt31" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt31_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt31",{id:"formulario:j_idt31"});</script>
+							</td>
+						</tr>
+						<tr>
+							<td class="label td_right"><label for="_origem">Origem</label></td>
+							<td><input id="formulario:j_idt33" name="formulario:j_idt33" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt33_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt33",{id:"formulario:j_idt33"});</script>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="label td_right"><label for="emen">Ementa/Decisão</label>
+							</td>
+							<td><input id="formulario:j_idt35" name="formulario:j_idt35" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt35_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt35",{id:"formulario:j_idt35"});</script></td>
+						</tr>
+
+						<tr>
+							<td class="label td_right"><label for="refl">Referência
+									legislativa</label></td>
+							<td><input id="formulario:j_idt37" name="formulario:j_idt37" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all txt_gd" /><script id="formulario:j_idt37_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formulario_j_idt37",{id:"formulario:j_idt37"});</script></td>
+						</tr>
+
+						<tr>
+							<td class="label td_right"><label>Data (dd/mm/aaaa)</label></td>
+							<td><span id="formulario:j_idt39" class="ui-calendar"><input id="formulario:j_idt39_input" name="formulario:j_idt39_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all" /></span><script id="formulario:j_idt39_s" type="text/javascript">PrimeFaces.cw("Calendar","widget_formulario_j_idt39",{id:"formulario:j_idt39",popup:true,locale:"pt_BR",dateFormat:"dd\/mm\/y"});</script>
+								<label> a </label><span id="formulario:j_idt41" class="ui-calendar"><input id="formulario:j_idt41_input" name="formulario:j_idt41_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all" /></span><script id="formulario:j_idt41_s" type="text/javascript">PrimeFaces.cw("Calendar","widget_formulario_j_idt41",{id:"formulario:j_idt41",popup:true,locale:"pt_BR",dateFormat:"dd\/mm\/y"});</script> <label for="combo_tipo_data"> Tipo:
+							</label><div id="formulario:combo_tipo_data" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" role="combobox" aria-haspopup="true" aria-expanded="false"><div class="ui-helper-hidden-accessible"><input id="formulario:combo_tipo_data_focus" name="formulario:combo_tipo_data_focus" type="text" autocomplete="off" aria-expanded="false" /></div><div class="ui-helper-hidden-accessible"><select id="formulario:combo_tipo_data_input" name="formulario:combo_tipo_data_input" tabindex="-1" aria-hidden="true"><option value="DTDP">Julgamento</option><option value="DTPP">Publicação</option></select></div><label id="formulario:combo_tipo_data_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="formulario:combo_tipo_data_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"><div class="ui-selectonemenu-items-wrapper" style="max-height:200px"><ul id="formulario:combo_tipo_data_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Julgamento" tabindex="-1" role="option">Julgamento</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Publicação" tabindex="-1" role="option">Publicação</li></ul></div></div></div><script id="formulario:combo_tipo_data_s" type="text/javascript">PrimeFaces.cw("SelectOneMenu","widget_formulario_combo_tipo_data",{id:"formulario:combo_tipo_data"});</script></td>
+						</tr>
+				
+				</table></div></div>
+
+		<div id="opcoes">
+			<table summary="Opções de pesquisa" cellspacing="1">
+				<tbody>
+					<tr>
+						<td><table id="formulario:selectTiposDocumento" role="presentation" class="ui-selectmanycheckbox ui-widget"><tr><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:selectTiposDocumento:0" name="formulario:selectTiposDocumento" type="checkbox" value="ACORDAO" onchange="PrimeFaces.ab({s:&quot;formulario:selectTiposDocumento&quot;,e:&quot;change&quot;,p:&quot;formulario:selectTiposDocumento&quot;,u:&quot;formulario:selectTiposDocumento&quot;});" checked="checked" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active"><span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div></div><label for="formulario:selectTiposDocumento:0">Acórdãos</label></td><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:selectTiposDocumento:1" name="formulario:selectTiposDocumento" type="checkbox" value="SUMULA" onchange="PrimeFaces.ab({s:&quot;formulario:selectTiposDocumento&quot;,e:&quot;change&quot;,p:&quot;formulario:selectTiposDocumento&quot;,u:&quot;formulario:selectTiposDocumento&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><label for="formulario:selectTiposDocumento:1">Súmula</label></td><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:selectTiposDocumento:2" name="formulario:selectTiposDocumento" type="checkbox" value="ARGUICAO" onchange="PrimeFaces.ab({s:&quot;formulario:selectTiposDocumento&quot;,e:&quot;change&quot;,p:&quot;formulario:selectTiposDocumento&quot;,u:&quot;formulario:selectTiposDocumento&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><label for="formulario:selectTiposDocumento:2">Arguições</label></td><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:selectTiposDocumento:3" name="formulario:selectTiposDocumento" type="checkbox" value="DECISAOMONO" onchange="PrimeFaces.ab({s:&quot;formulario:selectTiposDocumento&quot;,e:&quot;change&quot;,p:&quot;formulario:selectTiposDocumento&quot;,u:&quot;formulario:selectTiposDocumento&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><label for="formulario:selectTiposDocumento:3">Decisões Monocráticas</label></td></tr></table><script id="formulario:selectTiposDocumento_s" type="text/javascript">PrimeFaces.cw("SelectManyCheckbox","widget_formulario_selectTiposDocumento",{id:"formulario:selectTiposDocumento"});</script></td>
+						<td><div id="formulario:j_idt48" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:j_idt48_input" name="formulario:j_idt48_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" onchange="PrimeFaces.ab({s:&quot;formulario:j_idt48&quot;,e:&quot;change&quot;,p:&quot;formulario:j_idt48&quot;,u:&quot;formulario:selectTiposDocumento&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="formulario:j_idt48_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_formulario_j_idt48",{id:"formulario:j_idt48"});</script> <label for="todas"><b>Todos</b></label></td>
+					</tr>
+					<tr>
+						<td><hr id="formulario:j_idt50" class="ui-separator ui-state-default ui-corner-all" /></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><div id="formulario:listaBases" class="ui-outputpanel ui-widget">
+		<label for="bases">Fonte:</label><div id="formulario:bases" class="ui-outputpanel ui-widget"><table id="formulario:j_idt53" role="presentation" class="ui-selectmanycheckbox ui-widget"><tr><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:j_idt53:0" name="formulario:j_idt53" type="checkbox" value="TRF1" onchange="PrimeFaces.ab({s:&quot;formulario:j_idt53&quot;,e:&quot;change&quot;,p:&quot;formulario:j_idt53&quot;,u:&quot;formulario:listaBases&quot;});" checked="checked" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active"><span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div></div><label for="formulario:j_idt53:0">TRF1</label></td><td><div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="formulario:j_idt53:1" name="formulario:j_idt53" type="checkbox" value="JEF1" onchange="PrimeFaces.ab({s:&quot;formulario:j_idt53&quot;,e:&quot;change&quot;,p:&quot;formulario:j_idt53&quot;,u:&quot;formulario:listaBases&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><label for="formulario:j_idt53:1">JEF1</label></td></tr></table><script id="formulario:j_idt53_s" type="text/javascript">PrimeFaces.cw("SelectManyCheckbox","widget_formulario_j_idt53",{id:"formulario:j_idt53"});</script></div></div></div>
+				<div id="botoes" class="div_botoes">
+					<div style="float: left;"><button id="formulario:actPesquisar" name="formulario:actPesquisar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-priority-primary" onclick="PrimeFaces.onPost();" type="submit"><span class="ui-button-text ui-c">Pesquisar</span></button><script id="formulario:actPesquisar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formulario_actPesquisar",{id:"formulario:actPesquisar"});</script><button id="formulario:actLimpar" name="formulario:actLimpar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-priority-primary" onclick="PrimeFaces.ab({s:&quot;formulario:actLimpar&quot;,u:&quot;formulario:pesquisa&quot;,onco:function(xhr,status,args){setTimeout(hideMessages, 5000);;}});return false;" type="submit"><span class="ui-button-text ui-c">Limpar</span></button><script id="formulario:actLimpar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formulario_actLimpar",{id:"formulario:actLimpar"});</script>
+					</div>
+					<div style="float: left;"><div id="formulario:_captcha" class="ui-outputpanel ui-widget">
+							<div class="g-recaptcha" data-sitekey="6LfkZ24UAAAAAMO1KEF_pP-G3wE0dYN69-SG8NxI"></div></div>
+					</div>
+				</div>
+				<br /><div id="formulario:resultado" class="ui-outputpanel ui-widget">
+					<div style="clear: left;">
+						<table summary="Informações da pesquisa">
+							<tr>
+								<td><span class="label">Critério de pesquisa: </span></td>
+								<td><span>indigena</span></td>
+							</tr>
+						</table>
+					</div>
+					<br />
+					<div style="border: 1px solid cccc;">
+					</div></div>
+			</div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="1044284381881435689:-3672447751376957013" autocomplete="off" />
+</form>
+		<a href="#" class="back-to-top"></a>
+	</div>
+
+	<div id="rodape">
+		<span>SCES - Lote 09 Trecho 3, Polo 08, 2º andar, Salas 210 e
+			211. - Setor de Clubes - CEP: 70.200-003 - Brasília - DF - Telefone:
+			(61) 30227300</span> <br /> <span> 
+			<a href="http://www.cjf.jus.br/" target="_blank" style="color: inherit"> Conselho da Justiça Federal </a> © 2020 (build #20)
+		<br /> Seu IP: 179.246.222.86
+		</span>
+	</div><div id="j_idt379" style="position:fixed;right:60px;top:18px"><div id="j_idt379_start" style="display:none"><img id="j_idt380" src="/jurisprudencia/imagens/ajax-loader-1.gif?pfdrid_c=true" alt="" /></div><div id="j_idt379_complete" style="display:none"></div></div><script id="j_idt379_s" type="text/javascript">PrimeFaces.cw("AjaxStatus","widget_j_idt379",{id:"j_idt379"});</script><div id="exceptionDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="exceptionDialog_title" class="ui-dialog-title">Erro: ''</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+        Message:  <br />
+        StackTrace: 
+		<br /></div></div><script id="exceptionDialog_s" type="text/javascript">PrimeFaces.cw("Dialog","exceptionDialog",{id:"exceptionDialog",height:"500px"});</script></body>
+
+</html>

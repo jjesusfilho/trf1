@@ -25,8 +25,6 @@ trf1_quantidade(
 \item{secao}{sigla da seção}
 
 \item{diretorio}{Um diretório vazio para downloads provisórios}
-
-\item{funcao}{Geralmente baixar_cposg}
 }
 \value{
 vetor

@@ -5,7 +5,6 @@
 #' @param ano Ano
 #' @param distribuidor Verifique os códigos em codigos2
 #' @param secao sigla da seção
-#' @param funcao Geralmente baixar_cposg
 #' @param diretorio Um diretório vazio para downloads provisórios
 #'
 #' @return vetor

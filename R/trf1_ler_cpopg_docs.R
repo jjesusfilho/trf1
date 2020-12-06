@@ -45,7 +45,7 @@ trf1_ler_cpopg_docs <- function(arquivos = NULL, diretorio = "."){
       imagem <- FALSE
     }
 
-    tibble::tibble(processo,cpw, julgado)
+    tibble::tibble(processo,cpw, julgado, imagem)
 
   },NULL))
 
